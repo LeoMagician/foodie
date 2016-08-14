@@ -26,12 +26,11 @@ define(function() {
             });
         };
 
-
         $scope.signUp = function(size) {
 
             var modalInstance = $uibModal.open({
                 animation: $scope.animationsEnabled,
-                templateUrl: '/app/modules/views/templates/loginTemp.js',
+                templateUrl: '/app/modules/views/templates/signupTemp.html',
                 controller: 'ModalInstanceCtrl',
                 size: size,
                 resolve: {
