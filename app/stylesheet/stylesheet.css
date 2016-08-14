@@ -2,93 +2,114 @@
     opacity: 0.1;
 }
 
+ .loginfont {
+    font-family: Consolas;
+}
+
+.loginbodyspan {
+    position: absolute;
+    OVERFLOW: auto;
+    CURSOR: default;
+    left: 440px;
+    right: 0px;
+}
+
+.loginfooterspan {
+    position: absolute;
+    OVERFLOW: auto;
+    CURSOR: default;
+    left: 0px;
+    right: 400px;
+}
+
+.btnloginlogin {
+    background-color: #FF3333;
+    color: white;
+    text-align: center;
+    width: 530px;
+}
+
+.btnloginsignup {
+    background-color: #FF6666;
+    text-align: center;
+}
+
 footer {
-    /*background-image: url("/app/images/pic/footer_grey.jpg");*/
-    background-color: #cccccc;
-}
-
-.footerContainer {padding-top: 10px;}
-
-.menufoot ul {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-}
-
-.menufoot li {
-    margin: 0;
-    display: inline;
-    padding: 10px;
-}
-
-#menutop a {
-    color: #000000;
-    text-decoration: none;
-}
-
-#menutop a:hover {
-    text-decoration: underline;
-}
-
-#menuicon {
-    float: right;
-    margin-right: 20px;
-}
-
-#menutop {
-    float: left;
-}
-
-.icon_facebook {
-    background: url(/app/images/icon/icon_facebook_sm.png) no-repeat;
-    display: inline-block;
-    vertical-align: middle;
-    margin-left: 3px;
-    width: 25px;
-    height: 25px;
-}
-
-.icon_google {
-    background: url(/app/images/icon/icon_google_sm.png) no-repeat;
-    display: inline-block;
-    vertical-align: middle;
-    margin-left: 3px;
-    width: 25px;
-    height: 25px;
-}
-
-.icon_linkedin {
-    background: url(/app/images/icon/icon_linkedin_sm.png) no-repeat;
-    display: inline-block;
-    vertical-align: middle;
-    margin-left: 3px;
-    width: 25px;
-    height: 25px;
-}
-
-.icon_pin {
-    background: url(/app/images/icon/icon_pin_sm.png) no-repeat;
-    display: inline-block;
-    vertical-align: middle;
-    margin-left: 3px;
-    width: 25px;
-    height: 25px;
-}
-
-.icon_snapchat {
-    background: url(/app/images/icon/icon_snapchat_sm.png) no-repeat;
-    display: inline-block;
-    vertical-align: middle;
-    margin-left: 3px;
-    width: 25px;
-    height: 25px;
-}
-
-.icon_twitter {
-    background: url(/app/images/icon/icon_twitter_sm.png) no-repeat;
-    display: inline-block;
-    vertical-align: middle;
-    margin-left: 3px;
-    width: 25px;
-    height: 25px;
-}
+        /*background-image: url("/app/images/pic/footer_grey.jpg");*/
+        background-color: #cccccc;
+    }
+    .footerContainer {
+        padding-top: 10px;
+    }
+    .menufoot ul {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+    .menufoot li {
+        margin: 0;
+        display: inline;
+        padding: 10px;
+    }
+    #menutop a {
+        color: #000000;
+        text-decoration: none;
+    }
+    #menutop a:hover {
+        text-decoration: underline;
+    }
+    #menuicon {
+        float: right;
+        margin-right: 20px;
+    }
+    #menutop {
+        float: left;
+    }
+    .icon_facebook {
+        background: url(/app/images/icon/icon_facebook_sm.png) no-repeat;
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: 3px;
+        width: 25px;
+        height: 25px;
+    }
+    .icon_google {
+        background: url(/app/images/icon/icon_google_sm.png) no-repeat;
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: 3px;
+        width: 25px;
+        height: 25px;
+    }
+    .icon_linkedin {
+        background: url(/app/images/icon/icon_linkedin_sm.png) no-repeat;
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: 3px;
+        width: 25px;
+        height: 25px;
+    }
+    .icon_pin {
+        background: url(/app/images/icon/icon_pin_sm.png) no-repeat;
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: 3px;
+        width: 25px;
+        height: 25px;
+    }
+    .icon_snapchat {
+        background: url(/app/images/icon/icon_snapchat_sm.png) no-repeat;
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: 3px;
+        width: 25px;
+        height: 25px;
+    }
+    .icon_twitter {
+        background: url(/app/images/icon/icon_twitter_sm.png) no-repeat;
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: 3px;
+        width: 25px;
+        height: 25px;
+    }
