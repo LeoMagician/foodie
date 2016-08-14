@@ -5,7 +5,6 @@ define(function() {
 
             $scope.items = ['item1', 'item2', 'item3'];
             $scope.animationsEnabled = false;
-            
             $scope.open = function(size) {
 
                 var modalInstance = $uibModal.open({
@@ -17,7 +16,6 @@ define(function() {
                         items: function() {
                             return $scope.items;
                         }
-
                     }
                 });
 
