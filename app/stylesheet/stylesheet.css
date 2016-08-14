@@ -1,57 +1,67 @@
-
-.container{
+.container {
     width: 600px;
-    font-family:Consolas;
+    font-family: Consolas;
 }
-input{
+
+input {
     width: 400px;
 }
-img{
+
+img {
     width: 20px;
 }
-select{
-    width:120px;
-}
-#month{
-    text-align: left;
-}
-#day{
-    text-align: center;
-}
-#year{
-    text-align: right;
-}
-#checkbox{
-    height:15px;
-    width:15px
+
+select {
+    width: 120px;
 }
 
-.signup{
-    background-color:#FF3333;
-    color:white;
-    width:450px;
-    height:40px;
+#month {
+    text-align: left;
 }
-#login{
-    background-color:#FF6666;
-    color:white;
-    width:150px;
-    height:40px;
+
+#day {
+    text-align: center;
 }
-.signupfont{
+
+#year {
+    text-align: right;
+}
+
+#checkbox {
+    height: 15px;
+    width: 15px
+}
+
+.signup {
+    background-color: #FF3333;
+    color: white;
+    width: 450px;
+    height: 40px;
+}
+
+#login {
+    background-color: #FF6666;
+    color: white;
+    width: 150px;
+    height: 40px;
+}
+
+.signupfont {
     font-size: 14px;
 }
+
 .signupmemb {
     position: absolute;
     overflow: auto;
     cursor: default;
     left: 30px;
 }
+
 .navopacity {
     opacity: 0.1;
 }
 
- .loginfont {
+.loginfont {
     font-family: Consolas;
 }
 
@@ -88,7 +98,9 @@ footer {
     background-color: #cccccc;
 }
 
-.footerContainer {padding-top: 10px;}
+.footerContainer {
+    padding-top: 10px;
+}
 
 .menufoot ul {
     padding: 0;
