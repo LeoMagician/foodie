@@ -4,7 +4,8 @@
     font-family:Consolas;
 }
 input{
-    width: 400px;
+    width: 500px;
+    height:30px;
 }
 img{
     width: 20px;
@@ -29,7 +30,7 @@ select{
 .signup{
     background-color:#FF3333;
     color:white;
-    width:450px;
+    width:530px;
     height:40px;
 }
 #login{
