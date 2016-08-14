@@ -73,6 +73,10 @@ select {
     right: 0px;
 }
 
+.logincheck {
+    width: 40px;
+}
+
 .loginfooterspan {
     position: absolute;
     OVERFLOW: auto;
