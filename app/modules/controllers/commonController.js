@@ -31,7 +31,7 @@ define(function() {
 
                 var modalInstance = $uibModal.open({
                     animation: $scope.animationsEnabled,
-                    templateUrl: '/app/modules/views/templates/loginTemp.html',
+                    templateUrl: '/app/modules/views/templates/loginTmp.html',
                     controller: 'ModalInstanceCtrl',
                     size: size,
                     resolve: {
