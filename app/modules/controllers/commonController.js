@@ -3,6 +3,16 @@ define(function() {
 
     coreModule.controller('commonController', ['$scope', '$routeParams', '$location', '$route', '$uibModal', '$log', function($scope, $routeParams, $location, $route, $uibModal, $log) {
 
+<<<<<<< HEAD
+            var modalInstance = $uibModal.open({
+                animation: $scope.animationsEnabled,
+                templateUrl: '/app/modules/views/templates/loginTmp.html',
+                controller: 'ModalInstanceCtrl',
+                size: size,
+                resolve: {
+                    items: function() {
+                        return $scope.items;
+=======
             $scope.items = ['item1', 'item2', 'item3'];
             $scope.animationsEnabled = false;
             $scope.open = function(size) {
@@ -16,6 +26,7 @@ define(function() {
                         items: function() {
                             return $scope.items;
                         }
+>>>>>>> e07306d93158412a93f25543a3fd4aebd5ca10ab
                     }
                 });
 

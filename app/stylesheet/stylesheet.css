@@ -2,6 +2,26 @@
     opacity: 0.1;
 }
 
+<<<<<<< HEAD
+.loginfont {
+    font-family: Consolas;
+}
+    
+.loginbodyspan {
+    position: absolute;OVERFLOW: auto; CURSOR: default;left: 440px;right: 0px;
+}
+
+.loginfooterspan {
+    position: absolute;OVERFLOW: auto; CURSOR: default;left: 0px;right: 400px;
+}
+
+.btnloginlogin {
+    background-color:#FF3333;color:white;text-align:center;width:530px;
+}
+
+.btnloginsignup {
+    background-color:#FF6666;text-align:center;
+=======
 footer {
     /*background-image: url("/app/images/pic/footer_grey.jpg");*/
     background-color: #cccccc;
@@ -91,4 +111,5 @@ footer {
     margin-left: 3px;
     width: 25px;
     height: 25px;
+>>>>>>> e07306d93158412a93f25543a3fd4aebd5ca10ab
 }
