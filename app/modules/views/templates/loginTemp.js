@@ -1,4 +1,4 @@
-<script type="text/ng-template" id="/app/modules/views/templates/loginTemp.html">
+<script type="text/ng-template" id="/app/modules/views/templates/loginTemp.js">
     <div class="modal-header">
         <h3 class="modal-title">I'm a modal!</h3>
     </div>

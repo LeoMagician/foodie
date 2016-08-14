@@ -2,21 +2,14 @@ define(function() {
     var coreModule = angular.module('coreModule');
 
     coreModule.controller('commonController', ['$scope', '$routeParams', '$location', '$route', '$uibModal', '$log', function($scope, $routeParams, $location, $route, $uibModal, $log) {
-        $scope.$location = $location;
-
-        $scope.$on('$routeChangeSuccess', function (event, current, previous) {
-            console.log($location.path());   
-        });
-
-
-
+    
         $scope.items = ['item1', 'item2', 'item3'];
-        $scope.animationsEnabled = true;
+        $scope.animationsEnabled = false;
         $scope.open = function(size) {
 
             var modalInstance = $uibModal.open({
                 animation: $scope.animationsEnabled,
-                templateUrl: '/app/modules/views/templates/loginTemp.html',
+                templateUrl: '/app/modules/views/templates/loginTemp.js',
                 controller: 'ModalInstanceCtrl',
                 size: size,
                 resolve: {
@@ -38,7 +31,7 @@ define(function() {
 
             var modalInstance = $uibModal.open({
                 animation: $scope.animationsEnabled,
-                templateUrl: '/app/modules/views/templates/loginTemp.html',
+                templateUrl: '/app/modules/views/templates/loginTemp.js',
                 controller: 'ModalInstanceCtrl',
                 size: size,
                 resolve: {
@@ -55,9 +48,9 @@ define(function() {
             });
         };
 
-        $scope.toggleAnimation = function() {
-            $scope.animationsEnabled = !$scope.animationsEnabled;
-        };
+        // $scope.toggleAnimation = function() {
+        //     $scope.animationsEnabled = !$scope.animationsEnabled;
+        // };
 
 
     }]);
