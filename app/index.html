@@ -7,42 +7,9 @@
 </head>
 
 <body ng-controller="commonController">
-    <nav class="navbar navbar-default">
-        <div class="container">
-            <div class="navbar-header">
-                <a class="navbar-brand" href="#/">
-                    <img alt="brandIcon" src="images/icon/brand.png">
-                </a>
-            </div>
-            <ul class="nav navbar-nav navbar-right">
-                <!--<li>
-                    <a href="#/"><i class="fa fa-home"></i> Home
-                        <img alt="homeIcon" src="images/icon/home.png">
-                    </a>
-                </li>-->
-                <!--<li>
-                    <a href="#/login"><i class="fa fa-home"></i> Help
-                        <img alt="helpIcon" src="images/icon/help.png">
-                    </a>
-                </li>-->
-                <!--<li>
-                    <a href="#/" ng-click="open()"><i class="fa fa-home" ></i> Sign Up
-                        <img alt="profileIcon" src="images/icon/profile.png">
-                    </a>
-                </li>-->
-                <li>
-                    <a href="#/" ng-click="open()">Link</a>
-                </li>
-                <li>
-                    <a href="#/" ng-click="signUp()">Sign In</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-
+    <div class="header-temp"></div>
     <div ng-view></div>
-
-
+    <div class="footer-temp"></div>
 </body>
 <script src="../bower_components/requirejs/require.js" data-main="../app/common.js"></script>
 
