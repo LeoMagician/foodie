@@ -1,0 +1,26 @@
+{
+  "name": "bower-web-app",
+  "description": "NodeJS Web App",
+  "authors": [
+    "Xuejia(Leo) Li"
+  ],
+  "moduleType": [
+    "amd"
+  ],
+  "license": "ISC",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.5.8",
+    "requirejs": "^2.2.0",
+    "angular-route": "^1.5.8",
+    "jquery": "^3.1.0",
+    "bootstrap": "^3.3.7",
+    "angular-bootstrap": "^2.0.1"
+  }
+}
