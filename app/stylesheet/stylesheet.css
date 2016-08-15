@@ -1,58 +1,75 @@
-
-.container{
+.container {
     width: 600px;
-    font-family:Consolas;
+    font-family: Consolas;
 }
+
 input{
     width: 500px;
     height:30px;
-}
-img{
-    width: 20px;
-}
-select{
-    width:120px;
-}
-#month{
-    text-align: left;
-}
-#day{
-    text-align: center;
-}
-#year{
-    text-align: right;
-}
-#checkbox{
-    height:15px;
-    width:15px
+
+
+input {
+    width: 400px;
 }
 
-.signup{
-    background-color:#FF3333;
-    color:white;
-    width:530px;
-    height:40px;
+img {
+    width: 20px;
 }
-#login{
-    background-color:#FF6666;
-    color:white;
-    width:150px;
-    height:40px;
+
+select {
+    width: 120px;
 }
-.signupfont{
+
+#month {
+    text-align: left;
+}
+
+#day {
+    text-align: center;
+}
+
+#year {
+    text-align: right;
+}
+
+#checkbox {
+    height: 15px;
+    width: 15px
+}
+
+
+
+.signup {
+    background-color: #FF3333;
+    color: white;
+    width: 450px;
+    height: 40px;
+
+}
+
+#login {
+    background-color: #FF6666;
+    color: white;
+    width: 150px;
+    height: 40px;
+}
+
+.signupfont {
     font-size: 14px;
 }
+
 .signupmemb {
     position: absolute;
     overflow: auto;
     cursor: default;
     left: 30px;
 }
+
 .navopacity {
     opacity: 0.1;
 }
 
- .loginfont {
+.loginfont {
     font-family: Consolas;
 }
 
@@ -62,6 +79,10 @@ select{
     CURSOR: default;
     left: 440px;
     right: 0px;
+}
+
+.logincheck {
+    width: 40px;
 }
 
 .loginfooterspan {
@@ -89,7 +110,9 @@ footer {
     background-color: #cccccc;
 }
 
-.footerContainer {padding-top: 10px;}
+.footerContainer {
+    padding-top: 10px;
+}
 
 .menufoot ul {
     padding: 0;
