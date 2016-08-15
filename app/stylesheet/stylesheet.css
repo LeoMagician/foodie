@@ -190,3 +190,83 @@ footer {
     width: 25px;
     height: 25px;
 }
+
+/*home page style -- Leo*/
+.top_pic {
+    max-width: 100%;
+    width:100%;
+    height: 500px;
+    margin-top: -80px;
+}
+img.brand {
+    width: 40px;
+    height: 40px;
+    margin-top: -10px;
+}
+a.nav_signin  {
+    text-decoration: none;
+    color: gray;
+    font-weight: bold;
+    font-size: 18px;
+}
+a.nav_signup{
+    text-decoration: none;
+    color: gray;
+    font-weight: bold;
+    font-size: 18px;
+}
+li.nav_signin {
+    padding-right: 20px;
+}
+ul.nav_sign {
+    list-style: none;
+    padding-left: 20px;
+    padding-right: 10px;
+    margin-top: 10px;
+}
+.home_title_center {
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 40px;
+}
+.home_content_layout {
+    width: 1032px;
+    height: 1472px;
+    margin: auto;
+}
+.home_col_1 {
+    background: url(/app/images/pic/chineseFood.jpg);
+    width: 680px;
+    height: 344px;
+}
+.home_col_2 {
+    background: url(/app/images/pic/chinesefood01.jpg) no-repeat;
+    width: 327px;
+    height: 344px;
+}
+.space-4 {
+    margin-bottom: 24px;
+}
+/*.col-switch {
+    margin-top:-739px;
+}*/
+.col-lg-push-0 {
+    left: auto;
+}
+/*.col-md-push-6 {
+    left: 50%;
+}*/
+.rm-padding-sm{padding-bottom:0;padding-top:0;margin-top:0}
+.hide-sm{display:none !important}
+.page-container-responsive {
+    width: 1080px;
+    padding-left: 24px;
+    padding-right: 24px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.space-6 {
+    margin-bottom: 36px;
+}
+/*home page style -- Leo*/
