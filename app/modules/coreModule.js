@@ -3,13 +3,17 @@ define(function() {
 
     coreModule.config(['$routeProvider', function($routeProvider) {
         $routeProvider
+            .otherwise('/')
             .when('/', {
                 controller: 'homeController',
                 templateUrl: '/app/modules/views/home.html'
             })
             .when('/login', {
-                controller: 'loginController',
-                templateUrl: '/app/modules/views/login.html'
+                controller: 'loginController'
+            })
+            .when('/dinner', {
+                controller: 'dinnerController',
+                templateUrl: '/app/modules/views/dinner.html'
             });
     }]);
 
@@ -18,10 +22,5 @@ define(function() {
             angular.bootstrap(document, ['coreModule']);
         });
     });
-
-    // coreModule.controller('commonController', ['$scope', function($scope) {
-    //     $scope.title = "Hello there";
-    // }]);
-
 
 });
