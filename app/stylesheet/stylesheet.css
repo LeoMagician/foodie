@@ -3,13 +3,9 @@
     font-family: Consolas;
 }
 
-input{
-    width: 500px;
-    height:30px;
-
-
 input {
-    width: 400px;
+    width: 500px;
+    height: 30px;
 }
 
 img {
@@ -37,14 +33,11 @@ select {
     width: 15px
 }
 
-
-
 .signup {
     background-color: #FF3333;
     color: white;
     width: 450px;
     height: 40px;
-
 }
 
 #login {
