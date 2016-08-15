@@ -24,26 +24,26 @@ define(function() {
                 }, function() {
                     $log.info('Modal dismissed at: ' + new Date());
                 });
-                };
+            };
 
-                $scope.signUp = function(size) {
+            $scope.signUp = function(size) {
 
-                    var modalInstance = $uibModal.open({
-                        animation: $scope.animationsEnabled,
-                        templateUrl: '/app/modules/views/templates/signupTemp.html',
-                        controller: 'ModalInstanceCtrl',
-                        size: size,
-                        resolve: {
-                            items: function () {
-                                return $scope.items;
+                var modalInstance = $uibModal.open({
+                    animation: $scope.animationsEnabled,
+                    templateUrl: '/app/modules/views/templates/signupTemp.html',
+                    controller: 'ModalInstanceCtrl',
+                    size: size,
+                    resolve: {
+                        items: function() {
+                            return $scope.items;
 
-                            }
                         }
-                    });
-                }
-            // $scope.toggleAnimation = function() {
-            //     $scope.animationsEnabled = !$scope.animationsEnabled;
-            // };
+                    }
+                });
+            }
+            $scope.toggleAnimation = function() {
+                $scope.animationsEnabled = !$scope.animationsEnabled;
+            };
 
 
         }])
