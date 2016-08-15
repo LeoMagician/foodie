@@ -14,6 +14,10 @@ define(function() {
             .when('/dinner', {
                 controller: 'dinnerController',
                 templateUrl: '/app/modules/views/dinner.html'
+            })
+            .when('/dinnerList', {
+                controller: 'dinnerListController',
+                templateUrl: '/app/modules/views/dinnerList.html'
             });
     }]);
 
