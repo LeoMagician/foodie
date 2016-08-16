@@ -8,7 +8,7 @@
     height: 30px;
 }
 
-.signupImg {
+.input-group-addon img {
     width: 20px;
 }
 
@@ -67,8 +67,8 @@
 
 .loginbodyspan {
     position: absolute;
-    OVERFLOW: auto;
-    CURSOR: default;
+    overflow: auto;
+    cursor: default;
     left: 440px;
     right: 0px;
 }
@@ -79,8 +79,8 @@
 
 .loginfooterspan {
     position: absolute;
-    OVERFLOW: auto;
-    CURSOR: default;
+    overflow:  auto;
+    cursor:  default;
     left: 0px;
     right: 400px;
 }
@@ -210,7 +210,7 @@ footer {
 
 .personInfo_container {
     font-family: Consolas;
-    font-size: 14px;
+    /*font-size: 14px;*/
     line-height: 1.43;
     color: #484848;
     background-color: #f5f5f5;
@@ -583,6 +583,8 @@ h4 {
     height: 25px;
 }
 
+/*style----------------------------------------Xingshu*/
+
 .hostInfoName{
     font-size: 40px;
     margin-left: 70px;
@@ -611,14 +613,16 @@ h4 {
     font-size: 20px;
 }
 .hostInfo{
-    background-color: #DCDCDC;
+    background-color: #f5f5f5;
 }
-.hostInfo, .review{
-    margin-left: 100px;
+.hostInfo, .review, .personInfo_container, .description_container{
+    font-size: 15px;
     font-family: Consolas;
-    margin-right: 100px;
-    border:2px solid black;
+    border-top: 1px solid #DCDCDC;
+/*
+    border:1px solid black;*/
 }
+
 .bookReservation{
     text-align: center;
     font-weight: bold;
@@ -626,9 +630,12 @@ h4 {
 .book{
     font-family: Consolas;
     font-size: 15px;
-    border:2px solid black;
+    /*border:2px solid black;*/
     text-align: center;
     width: 300px;
+    height: 320px;
+    background-color: white;
+     border-radius: 25px;
 }
 .bookDetail{
     margin-left: auto;
@@ -636,11 +643,13 @@ h4 {
 }
 .bookSeat{
     text-align: center;
+    margin-top: 10px;
 }
 .bookTableHeader{
-     margin-left: auto;
+    margin-left: auto;
     margin-right: auto;
     width: 300px;
+    height: 50px;
     background-color: #7F7F7F;
     font-size: 20px;
     font-weight: bold;
@@ -653,12 +662,7 @@ h4 {
     height: 30px;
     box-shadow: 2px 2px 2px black;
 }
-.bookPerPeople{
-    text-align: right;
-}
-.bookPrice{
-    text-align: left;
-}
+
 .bookDate{
     width: 130px;
 }
@@ -697,6 +701,10 @@ reviewCommentTable{
 .reviewRow2{
     margin-bottom: 5px;
 }
+.reviewCommentRow{
+    font-size: 20px;
+}
+
 .hostinfoHr, .reviewHr{
     border-color: black;
     margin-left: 70px;
@@ -705,6 +713,7 @@ reviewCommentTable{
 
 .bookBody{
     background-color: white;
+    line-height: 200%;
 }
 .reviewSmallHr{
     border-color: black;
@@ -731,6 +740,43 @@ reviewCommentTable{
     width: 20px;
 }
 
+.book-temp{
+    height: 320px;
+    z-index: 1;
+    position: absolute;
+    top: 1230px;
+    right: 120px;
+}
+/*.book-temp{
+    position: fixed;
+    z-index: 1;
+    right: 70px;
+    top:400px;
+}*/
+.personInfo5star img{
+    width: 200px;
+}
+.bookWishBtn{
+    width: 220px;
+    height: 30px;
+    background-color: lightgrey;
+    border: 1px solid gray;
+    font-weight: bold;
+}
+.bookReport{
+    width: 220px;
+    height: 30px;
+    margin-left: 40px;
+}
+.bookLeftTable{
+    text-align: center;
+}
+.bookSavedNumber{
+    font-size: 18px;
+    margin-top: 1em;
+}
+
+/*style-------------------------Xingshu*/
 
 /*style -------------------------- Leo*/
 
