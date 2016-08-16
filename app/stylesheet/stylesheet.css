@@ -248,61 +248,61 @@ ul.nav_sign {
 }
 
 .home_category_lg_1 {
-    background: url(/app/images/homepic/food-category-680*344/chinese－food.jpg);
+    background: url(/app/images/homepic/food_category_lg/chinese－food.jpg);
     width: 680px;
     height: 344px;
 }
 
 .home_category_lg_2 {
-    background: url(/app/images/homepic/food-category-680*344/japanese－food.jpg);
+    background: url(/app/images/homepic/food_category_lg/japanese－food.jpg);
     width: 680px;
     height: 344px;
 }
 
 .home_food_1 {
-    background: url(/app/images/homepic/food-327*344/food1.jpg) no-repeat;
+    background: url(/app/images/homepic/food_sm/food1.jpg) no-repeat;
     width: 327px;
     height: 344px;
 }
 
 .home_food_2 {
-    background: url(/app/images/homepic/food-327*344/food2.jpg) no-repeat;
+    background: url(/app/images/homepic/food_sm/food2.jpg) no-repeat;
     width: 327px;
     height: 344px;
 }
 
 .home_category_sm_1 {
-    background: url(/app/images/homepic/food-category-327*344/americanfood.jpg);
+    background: url(/app/images/homepic/food_category_sm/americanfood.jpg);
     width: 327px;
     height: 344px;
 }
 
 .home_category_sm_2 {
-    background: url(/app/images/homepic/food-category-327*344/frenchfood.jpg);
+    background: url(/app/images/homepic/food_category_sm/frenchfood.jpg);
     width: 327px;
     height: 344px;
 }
 
 .home_category_sm_3 {
-    background: url(/app/images/homepic/food-category-327*344/italianfood.jpg);
+    background: url(/app/images/homepic/food_category_sm/italianfood.jpg);
     width: 327px;
     height: 344px;
 }
 
 .home_category_sm_4 {
-    background: url(/app/images/homepic/food-category-327*344/koreanfood.jpg);
+    background: url(/app/images/homepic/food_category_sm/koreanfood.jpg);
     width: 327px;
     height: 344px;
 }
 
 .home_category_sm_5 {
-    background: url(/app/images/homepic/food-category-327*344/mexicanfood.jpg);
+    background: url(/app/images/homepic/food_category_sm/mexicanfood.jpg);
     width: 327px;
     height: 344px;
 }
 
 .home_category_sm_6 {
-    background: url(/app/images/homepic/food-category-327*344/spanishfood.jpg);
+    background: url(/app/images/homepic/food_category_sm/spanishfood.jpg);
     width: 327px;
     height: 344px;
 }
