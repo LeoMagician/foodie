@@ -1,0 +1,29 @@
+<div class="hostInfo">
+    <div class="hostInfoHeader">Your Host</div>
+    <hr class="hostinfoHr">
+    <div class="hostInfoTable">
+        <table>
+            <tr>
+                <td><img src="images/pic/check.jpg" class="hostInfoPic"></td>
+                <td>
+                    <table class="hostSubTable">
+                        <tr>
+                            <p ng-moodel="hostInfoName" class="hostInfoName" ng-init="hostName='Leo Li'">{{hostName}}</p>
+                        </tr>
+                        <tr>
+                            <div class="text-muted"><span ng-model="hostInfoLocation" ng-init="hostLocation='Boston, MA'" class="hostInfoLocation">{{hostLocation}}</span>                                |
+                                <span ng-model="hostRegisterDate" ng-init="hostRegisterDate='May,2015'">since {{hostRegisterDate}}</span></div>
+                        </tr>
+                        <tr>
+                            <p ng-model="hostInfoDes" class="hostInfoDes" ng-init="hostInfoDescription='I love cooking and really good at making Chinese food'">{{hostInfoDescription}}</p>
+                        </tr>
+                        <tr>
+                            <p ng-model="hostInfoView" ng-init="hostInfoView='30'" class="hostInfoView">{{hostInfoView}} Reviews</p>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <hr class="hostinfoHr">
+</div>
