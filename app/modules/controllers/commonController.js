@@ -2,9 +2,10 @@ define(function() {
     var coreModule = angular.module('coreModule');
 
     coreModule.controller('commonController', ['$scope', '$routeParams', '$location', '$route', '$uibModal', '$log', function($scope, $routeParams, $location, $route, $uibModal, $log) {
-
+            $scope.test = 'test';
             $scope.items = ['item1', 'item2', 'item3'];
             $scope.animationsEnabled = false;
+
             $scope.open = function(size) {
 
                 var modalInstance = $uibModal.open({
