@@ -1,0 +1,137 @@
+<div class="review">
+    <div class="reviewHeader">
+        <span ng-model="reviewNumber" ng-init="verivewNumber='34'" class="reviewNumber">{{reviewNumber}} Reviews</span>
+        <span class="reviewStars"><img src="images/pic/wholeStar.png"></span>
+        <span class="reviewTriangle"><a><img src="images/icon/downTriangle.png"></a></span>
+        <!--<div class="reviewShow">
+			<ul>
+			<li>5 Star</li>
+            <li>4 Star</li>
+			<li>3 Star</li>
+			<li>2 Star</li>
+			<li>1 Star</li>
+			</ul>
+		</div>-->
+    </div>
+    <hr class="reviewHr">
+    <div class="reveiwComment">
+        <div class="reviewRow1">
+            <div class="col-sm-4"><span class="text-muted"><small>Summary</small></span></div>
+            <div class="col-sm-4">
+                <table class="reviewCommentDetail">
+                    <tr>
+                        <td>Food Taste</td>
+                        <td><img src="images/pic/wholeStar.png"></td>
+                    </tr>
+                </table>
+                <!--<span>Food Taste</span><span class="reviewStars"><img src="images/pic/wholeStar.png"></span>-->
+            </div>
+            <div class="col-sm-4">
+                <table class="reviewCommentDetail">
+                    <tr>
+                        <td>Value &nbsp;</td>
+                        <td><img src="images/pic/wholeStar.png"></td>
+                    </tr>
+                </table>
+                <!--<span>Value</span><span class="reviewStars"><img src="images/pic/wholeStar.png"></span>
+            -->
+            </div>
+            <br>
+        </div>
+        <div class="reviewRow2">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4">
+                <table class="reviewCommentDetail">
+                    <tr>
+                        <td>Cleanlines</td>
+                        <td><img src="images/pic/halfStar.png"></td>
+                    </tr>
+                </table>
+                <!--<span>Cleaness</span><span class="reviewStars"><img src="images/pic/halfStar.png"></span>-->
+            </div>
+            <div class="col-sm-4">
+                <table class="reviewCommentDetail">
+                    <tr>
+                        <td>Accuracy</td>
+                        <td><img src="images/pic/halfStar.png"></td>
+                    </tr>
+                </table>
+                <!--<p><span>Accuracy</span><span class="reviewStars"><img src="images/pic/halfStar.png"></span></p>-->
+            </div>
+            <br>
+        </div>
+
+        <div class="reviewDetail">
+            <div class="reviewPersonal1">
+                <table>
+                    <tr>
+                        <td class="reviewPerson"><img src="images/pic/check.jpg" class="reviewPersonPic"></td>
+                        <td>
+                            <p ng-model="reviewPerson1Comment1" ng-init="reviewPerson1Comment1='Pretty great ravioli! I was not crazy about the Gorgonzala variety, but I am not crazy
+                            about Gorgonzala in general. The plain cheese is nice and thee meat is really good. I could not recommend the source.'" class="reviewPerson1Comment">
+                                {{reviewPerson1Comment1}}</p>
+                        </td>
+                    </tr>
+                </table>
+                <div class="reviewCommentTable">
+                    <table>
+                        <tr>
+                            <div class="reviewCommentRow">
+                                <div class="col-sm-1"></div>
+                                <div class="col-sm-1"><p ng-model="reviewPersonName" ng-init="reviewPersonName='John'">{{reviewPersonName}}</p></div>
+                                <div class="col-sm-3"><span ng-model="reviewDate" ng-init="reviewDate='June,2016'" class="reviewDate">{{reviewDate}}</span></div>
+                                <div class="col-sm-7"><span><img src="images/icon/good.png" ng-model="reviewHelpfulNumber1" ng-click="reviewHelpfulNumber1 = reviewHelpfulNumber1 + 1" ng-init="reviewHelpfulNumber1=0">&nbsp; Helpful &nbsp; &nbsp; {{reviewHelpfulNumber1}}</span></div><br>
+                            </div>
+                        </tr>
+                        <tr></tr>
+                        <hr class="reviewSmallHr">
+                    </table>
+                </div>
+            </div>
+
+            <hr class="reviewSmallHr">
+
+            <div class="reviewPersonal2">
+                <table>
+                    <tr>
+                        <td class="reviewPerson"><img src="images/pic/check0.jpg" class="reviewPersonPic"></td>
+                        <td>
+                            <p ng-model="reviewPerson1Comment" ng-init="reviewPerson1Comment='I especially like their mushroom ravioli which are great for Alfredo sauce. Lazy me, I did not
+                            feel like making sauce and bought a container of Alfredo sauce from Bell, which was a ral dissappointment.
+                            It was watery and tasteless and leftovers went into the trash.'" class="reviewPerson1Comment">
+                                {{reviewPerson1Comment}}</p>
+                        </td>
+                    </tr>
+                </table>
+                <div class="reviewCommentTable">
+                    <table>
+                        <tr>
+                            <div class="reviewCommentRow">
+                                <div class="col-sm-1"></div>
+                                <div class="col-sm-1"><p ng-model="reviewPersonName1" ng-init="reviewPersonName1='Paul'">{{reviewPersonName1}}</p></div>
+                                <div class="col-sm-3"><span ng-model="reviewDate" ng-init="reviewDate='July,2016'" class="reviewDate">{{reviewDate}}</span></div>
+                                <div class="col-sm-7"><span><img src="images/icon/good.png" ng-model="reviewHelpfulNumber2" ng-click="reviewHelpfulNumber2 = reviewHelpfulNumber2 + 1" ng-init="reviewHelpfulNumber2=0">&nbsp; Helpful &nbsp; &nbsp; {{reviewHelpfulNumber2}}</span></div><br>
+                            </div>
+                        </tr>
+                        <tr></tr>
+                        <hr class="reviewSmallHr">
+                    </table>
+                </div>
+            </div>
+            <hr class="reviewSmallHr">
+            <div class="reviewBtn">
+                <div class="btn-group">
+                    <button type="button" class="btn btn-default btn-lg disabled">1</button>
+                    <button type="button" class="btn btn-default btn-lg">2</button>
+                    <button type="button" class="btn btn-default btn-lg">3</button>
+
+                </div>
+                ......
+                <div class="btn-group">
+                    <button type="button" class="btn btn-default btn-lg">17</button>
+                    <button type="button" class="btn btn-default btn-lg">></button>
+
+                </div>
+            </div>
+        </div>
+    </div>
