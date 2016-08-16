@@ -300,8 +300,8 @@ ul.nav_sign {
 }
 
 .date-label {
-    padding-left: 50px;
-    padding-right: 108px;
+    padding-left: 30px;
+    padding-right: 98px;
 }
 
 .date-input {
@@ -321,13 +321,13 @@ ul.nav_sign {
 }
 
 .food-type-label {
-    padding-left: 50px;
-    padding-right: 80px;
+    padding-left: 30px;
+    padding-right: 70px;
 }
 
 .span-food-check {
-    font-size: 20px;
-    padding-right: 30px;
+    font-size: 15px;
+    padding-right: 20px;
 }
 
 .dinner-list-container {
@@ -338,9 +338,28 @@ ul.nav_sign {
 
 .dinner_col {
     background: url(/app/images/pic/chinesefood02.jpg) no-repeat;
-    width: 300px;
-    height: 250px;
+    width: 400px;
+    height: 350px;
 }
+
+.sidebar-map {
+    float: right;
+    background: #aafed6;
+    width: 550px;
+}
+
+.dinner-content-list {
+    float: none;
+    width: 800px;
+    height: 900px;
+    overflow: hidden;
+}
+
+
+/*.dinner-list-container {
+    height: auto;
+    overflow: hidden;
+}*/
 
 
 /*home page */
