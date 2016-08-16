@@ -18,6 +18,22 @@ define(function() {
             .when('/dinnerList', {
                 controller: 'dinnerListController',
                 templateUrl: '/app/modules/views/dinnerList.html'
+            })
+            .when('/createDinner', {
+                controller: 'createDinnerController',
+                templateUrl: '/app/modules/views/createDinner.html'
+            })
+            .when('/setbasic', {
+                controller: 'setbasicController',
+                templateUrl: '/app/modules/views/createDinner/setbasic.html'
+            })
+            .when('/setmenu', {
+                controller: 'setmenuController',
+                templateUrl: '/app/modules/views/createDinner/setmenu.html'
+            })
+            .when('/setguest', {
+                controller: 'setguestController',
+                templateUrl: '/app/modules/views/createDinner/setguest.html'
             });
     }]);
 
