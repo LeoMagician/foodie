@@ -247,14 +247,62 @@ ul.nav_sign {
     margin: auto;
 }
 
-.home_col_1 {
-    background: url(/app/images/pic/chineseFood.jpg);
+.home_category_lg_1 {
+    background: url(/app/images/homepic/food-category-680*344/chinese－food.jpg);
     width: 680px;
     height: 344px;
 }
 
-.home_col_2 {
-    background: url(/app/images/pic/chinesefood01.jpg) no-repeat;
+.home_category_lg_2 {
+    background: url(/app/images/homepic/food-category-680*344/japanese－food.jpg);
+    width: 680px;
+    height: 344px;
+}
+
+.home_food_1 {
+    background: url(/app/images/homepic/food-327*344/food1.jpg) no-repeat;
+    width: 327px;
+    height: 344px;
+}
+
+.home_food_2 {
+    background: url(/app/images/homepic/food-327*344/food2.jpg) no-repeat;
+    width: 327px;
+    height: 344px;
+}
+
+.home_category_sm_1 {
+    background: url(/app/images/homepic/food-category-327*344/americanfood.jpg);
+    width: 327px;
+    height: 344px;
+}
+
+.home_category_sm_2 {
+    background: url(/app/images/homepic/food-category-327*344/frenchfood.jpg);
+    width: 327px;
+    height: 344px;
+}
+
+.home_category_sm_3 {
+    background: url(/app/images/homepic/food-category-327*344/italianfood.jpg);
+    width: 327px;
+    height: 344px;
+}
+
+.home_category_sm_4 {
+    background: url(/app/images/homepic/food-category-327*344/koreanfood.jpg);
+    width: 327px;
+    height: 344px;
+}
+
+.home_category_sm_5 {
+    background: url(/app/images/homepic/food-category-327*344/mexicanfood.jpg);
+    width: 327px;
+    height: 344px;
+}
+
+.home_category_sm_6 {
+    background: url(/app/images/homepic/food-category-327*344/spanishfood.jpg);
     width: 327px;
     height: 344px;
 }
