@@ -1,12 +1,19 @@
 define(function() {
     var coreModule = angular.module('coreModule');
 
-    coreModule.controller('dinnerListController', function($scope) {
-            $scope.name = "dinner list page";
-            $scope.dinnerList = "dinner list section"
-            $scope.filter = "dinner filter section";;
-            $scope.pagination = "dinner pagination section";
-            $scope.map = "dinner map section";
+    coreModule.controller('dinnerListController', function() {
+            // $scope.name = "dinner list page";
+            // $scope.dinnerList = "dinner list section"
+            // $scope.filter = "dinner filter section";;
+            // $scope.pagination = "dinner pagination section";
+            
+            // $scope.map = "dinner map section";
+            // NgMap.getMap().then(function(map) {
+            //     console.log(map.getCenter());
+            //     console.log('markers', map.markers);
+            //     console.log('shapes', map.shapes);
+            // });
+
         })
         .directive("dinnerFilter", function() {
             return {
@@ -36,4 +43,5 @@ define(function() {
                 replace: false
             }
         });
+
 });

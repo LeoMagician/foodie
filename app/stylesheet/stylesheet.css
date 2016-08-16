@@ -191,82 +191,226 @@ footer {
     height: 25px;
 }
 
-/*home page style -- Leo*/
+
+/*style -------------------------- Leo*/
+
+
+/*home page*/
+
 .top_pic {
     max-width: 100%;
-    width:100%;
+    width: 100%;
     height: 500px;
     margin-top: -80px;
 }
+
 img.brand {
     width: 40px;
     height: 40px;
     margin-top: -10px;
 }
-a.nav_signin  {
+
+a.nav_signin {
     text-decoration: none;
     color: gray;
     font-weight: bold;
     font-size: 18px;
 }
-a.nav_signup{
+
+a.nav_signup {
     text-decoration: none;
     color: gray;
     font-weight: bold;
     font-size: 18px;
 }
+
 li.nav_signin {
     padding-right: 20px;
 }
+
 ul.nav_sign {
     list-style: none;
     padding-left: 20px;
     padding-right: 10px;
     margin-top: 10px;
 }
+
 .home_title_center {
     text-align: center;
     padding-top: 30px;
     padding-bottom: 40px;
 }
+
 .home_content_layout {
     width: 1032px;
     height: 1472px;
     margin: auto;
 }
-.home_col_1 {
-    background: url(/app/images/pic/chineseFood.jpg);
+
+.home_category_lg_1 {
+    background: url(/app/images/homepic/food-category-680*344/chinese－food.jpg);
     width: 680px;
     height: 344px;
 }
-.home_col_2 {
-    background: url(/app/images/pic/chinesefood01.jpg) no-repeat;
+
+.home_category_lg_2 {
+    background: url(/app/images/homepic/food-category-680*344/japanese－food.jpg);
+    width: 680px;
+    height: 344px;
+}
+
+.home_food_1 {
+    background: url(/app/images/homepic/food-327*344/food1.jpg) no-repeat;
     width: 327px;
     height: 344px;
 }
+
+.home_food_2 {
+    background: url(/app/images/homepic/food-327*344/food2.jpg) no-repeat;
+    width: 327px;
+    height: 344px;
+}
+
+.home_category_sm_1 {
+    background: url(/app/images/homepic/food-category-327*344/americanfood.jpg);
+    width: 327px;
+    height: 344px;
+}
+
+.home_category_sm_2 {
+    background: url(/app/images/homepic/food-category-327*344/frenchfood.jpg);
+    width: 327px;
+    height: 344px;
+}
+
+.home_category_sm_3 {
+    background: url(/app/images/homepic/food-category-327*344/italianfood.jpg);
+    width: 327px;
+    height: 344px;
+}
+
+.home_category_sm_4 {
+    background: url(/app/images/homepic/food-category-327*344/koreanfood.jpg);
+    width: 327px;
+    height: 344px;
+}
+
+.home_category_sm_5 {
+    background: url(/app/images/homepic/food-category-327*344/mexicanfood.jpg);
+    width: 327px;
+    height: 344px;
+}
+
+.home_category_sm_6 {
+    background: url(/app/images/homepic/food-category-327*344/spanishfood.jpg);
+    width: 327px;
+    height: 344px;
+}
+
 .space-4 {
     margin-bottom: 24px;
 }
+
+
 /*.col-switch {
     margin-top:-739px;
 }*/
+
 .col-lg-push-0 {
     left: auto;
 }
+
+
 /*.col-md-push-6 {
     left: 50%;
 }*/
-.rm-padding-sm{padding-bottom:0;padding-top:0;margin-top:0}
-.hide-sm{display:none !important}
+
+.rm-padding-sm {
+    padding-bottom: 0;
+    padding-top: 0;
+    margin-top: 0
+}
+
+.hide-sm {
+    display: none !important
+}
+
 .page-container-responsive {
     width: 1080px;
     padding-left: 24px;
     padding-right: 24px;
     margin-left: auto;
     margin-right: auto;
-
 }
+
 .space-6 {
     margin-bottom: 36px;
 }
-/*home page style -- Leo*/
+
+.date-label {
+    padding-left: 30px;
+    padding-right: 98px;
+}
+
+.date-input {
+    margin-right: 50px;
+    width: 200px;
+    height: 30px;
+}
+
+.guest-combo {
+    height: 30px;
+    width: 120px;
+}
+
+.food-check {
+    height: 20px;
+    width: 20px;
+}
+
+.food-type-label {
+    padding-left: 30px;
+    padding-right: 70px;
+}
+
+.span-food-check {
+    font-size: 15px;
+    padding-right: 20px;
+}
+
+.dinner-list-container {
+    -moz-column-count: 2;
+    -webkit-column-count: 2;
+    column-count: 2;
+}
+
+.dinner_col {
+    background: url(/app/images/pic/chinesefood02.jpg) no-repeat;
+    width: 400px;
+    height: 350px;
+}
+
+.sidebar-map {
+    float: right;
+    background: #aafed6;
+    width: 550px;
+}
+
+.dinner-content-list {
+    float: none;
+    width: 800px;
+    height: 900px;
+    overflow: hidden;
+}
+
+
+/*.dinner-list-container {
+    height: auto;
+    overflow: hidden;
+}*/
+
+
+/*home page */
+
+
+/*style -------------------------- Leo*/
