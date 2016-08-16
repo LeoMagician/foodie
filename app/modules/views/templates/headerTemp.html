@@ -1,11 +1,11 @@
-<nav class="navbar navbar-default">
+<nav class="navbar">
     <div class="container-fluid">
         <div class="navbar-header">
             <a class="navbar-brand" href="#/">
-                <img alt="brandIcon" src="images/icon/brand.png">
+                <img alt="brandIcon" src="images/icon/brand.png" class="brand">
             </a>
         </div>
-        <ul class="nav navbar-nav navbar-right">
+        <ul class="nav_sign navbar-nav navbar-right">
             <!--<li>
                     <a href="#/"><i class="fa fa-home"></i> Home
                         <img alt="homeIcon" src="images/icon/home.png">
@@ -21,11 +21,11 @@
                         <img alt="profileIcon" src="images/icon/profile.png">
                     </a>
                 </li>-->
-            <li>
-                <a href="#/" ng-click="open()">Sign In</a>
+            <li class="nav_signin">
+                <a href="#/" ng-click="open()" class="nav_signin" >Sign In</a>
             </li>
             <li>
-                <a href="#/" ng-click="signUp()">Sign Up</a>
+                <a href="#/" ng-click="signUp()" class="nav_signup">Sign Up</a>
             </li>
         </ul>
     </div>

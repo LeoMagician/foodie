@@ -1,0 +1,22 @@
+<div class="book">
+    <table class="bookTableHeader">
+        <tr>
+            <td ng-model="bookPrice" ng-init="bookPrice='29'"><span class="bookPrice"> $ {{bookPrice}}</span></td>
+            <td class="bookPerPeople">Per People</td>
+        </tr>
+    </table>
+    <div class="bookBody">
+    <table class="bookDetail">
+        <tr class="bookReservation">
+            <td>Dinner Time</td>&nbsp; &nbsp; &nbsp; &nbsp;
+            <td>Guests</td>
+        </tr>
+        <tr class="bookReservationDetail">
+            <td><input type="date" name="bookDate" id="bookDate" class="bookDate"></td>
+            <td><input type="number" name="bookNumber" ng-model="bookNumber" class="bookNumber" min="1"></td>
+        </tr>
+    </table>
+    <a href=""><button class="bookBtn">Book a Dinner</button></a><br>
+    <p ng-model="bookSeat" ng-init="bookSeat='10'" class="bookSeat">{{bookSeat}} seats left, hurry up!</p>
+    </div>
+</div>

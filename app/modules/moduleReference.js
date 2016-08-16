@@ -3,6 +3,7 @@ define(function() {
         'modules/controllers/commonController',
         'modules/controllers/homeController',
         'modules/controllers/loginController',
-        'modules/controllers/dinnerController'
+        'modules/controllers/dinnerController',
+        'modules/controllers/dinnerListController'
     ]
 });

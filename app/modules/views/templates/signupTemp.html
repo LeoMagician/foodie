@@ -6,20 +6,20 @@
     </div>
     <div class="modal-body">
     <form>
-<input type="text"  name="firstName" id="firstName" ng-model="firstName" required placeholder="First Name"><span><img src="images/icon/brand.png"></span><br>
+<input type="text"  name="firstName" id="firstName" ng-model="firstName" required placeholder="First Name"><span><img class="signupImg" src="images/icon/brand.png"></span><br>
 <div ng-show="form.$submitted||form.firstName.touched">
     <span ng-show="form.firstName.$error.required">Please Enter Your First Name</span>
     </div>
-<input type="text" name="lastName" id="lastName" ng-model="lastName" required placeholder="Last Name"><span><img src="images/icon/brand.png"></span><br>
+<input type="text" name="lastName" id="lastName" ng-model="lastName" required placeholder="Last Name"><span><img class="signupImg" src="images/icon/brand.png"></span><br>
 <div ng-show="form.$submitted||form.lastName.touched">
     <span ng-show="form.lastName.$error.required">Please Enter Your Last Name</span>
     </div>
-<input type="email" name="email" id="email" ng-model="email" required placeholder="Email Address"><span><img src="images/icon/mail.png"></span><br>
+<input type="email" name="email" id="email" ng-model="email" required placeholder="Email Address"><span><img class="signupImg" src="images/icon/mail.png"></span><br>
 <div ng-show="form.$submitted || form.email.$touched">
       <span ng-show="form.email.$error.required">Please Enter Your Email</span>
       <span ng-show="form.email.$error.email">Invalid Email</span>
     </div>
-<input type="password" name="password" id="password" ng-model="password" required placeholder="Password"><span><img src="images/icon/key.png"></span><br>
+<input type="password" name="password" id="password" ng-model="password" required placeholder="Password"><span><img class="signupImg" src="images/icon/key.png"></span><br>
 <div ng-show="form.$submitted || form.password.$touched">
 <span ng-show="form.password.$error.required">Please Enter Your Password</span>
 </div>
