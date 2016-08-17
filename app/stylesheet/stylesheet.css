@@ -3,7 +3,10 @@
     font-family: Consolas;
 }
 
-#firstName, #lastName, #email, #password{
+#firstName,
+#lastName,
+#email,
+#password {
     width: 500px;
     height: 30px;
 }
@@ -358,7 +361,7 @@ footer {
     display: table;
 }
 
-.description_row_menu  .description_row_amenities .description_row_prices .description_row_description .description_row_rules .description_row_safety{
+.description_row_menu .description_row_amenities .description_row_prices .description_row_description .description_row_rules .description_row_safety {
     margin-left: -12px;
     margin-right: -12px;
     content: " ";
@@ -409,7 +412,7 @@ h4 {
 
 .description_p {
     margin-top: 0;
-    margin-bottom: 15px;    
+    margin-bottom: 15px;
 }
 
 .description_row_condensed {
@@ -450,7 +453,7 @@ h4 {
 
 .description_hr {
     margin-top: 15px;
-    margin-bottom: 15px;    
+    margin-bottom: 15px;
     border: 0;
     border-top: 1px solid #dce0e0;
     display: block;
@@ -583,35 +586,44 @@ h4 {
     height: 25px;
 }
 
+
 /*style----------------------------------------Xingshu*/
 
-.hostInfoName{
+
+.hostInfoName {
+
     font-size: 40px;
     margin-left: 70px;
 }
-.hostInfoView{
+
+.hostInfoView {
     font-weight: bold;
     font-size: 30px;
     margin-left: 70px;
 }
-.hostInfoHeader{
+
+.hostInfoHeader {
     font-weight: bold;
     font-size: 30px;
     margin-left: 70px;
     margin-top: 20px;
 }
-.hostInfoPic{
+
+.hostInfoPic {
     width: 150px;
     margin-left: 80px;
 }
-.hostInfoDes{
+
+.hostInfoDes {
     margin-left: 70px;
     font-size: 20px;
 }
-.hostInfoLocation{
+
+.hostInfoLocation {
     margin-left: 70px;
     font-size: 20px;
 }
+
 .hostInfo{
     background-color: #f5f5f5;
 }
@@ -622,30 +634,51 @@ h4 {
 /*
     border:1px solid black;*/
 }
+.hostInfo {
+    background-color: #DCDCDC;
+}
 
-.bookReservation{
+.hostInfo,
+.review {
+    margin-left: 100px;
+    font-family: Consolas;
+    margin-right: 100px;
+    border: 2px solid black;
+}
+
+.bookReservation {
+
     text-align: center;
     font-weight: bold;
 }
-.book{
+
+.book {
     font-family: Consolas;
     font-size: 15px;
+
     /*border:2px solid black;*/
+
+    border: 2px solid black;
+
     text-align: center;
     width: 300px;
     height: 320px;
     background-color: white;
      border-radius: 25px;
 }
-.bookDetail{
+
+.bookDetail {
     margin-left: auto;
     margin-right: auto;
 }
-.bookSeat{
+
+.bookSeat {
     text-align: center;
     margin-top: 10px;
 }
-.bookTableHeader{
+
+.bookTableHeader {
+
     margin-left: auto;
     margin-right: auto;
     width: 300px;
@@ -654,7 +687,8 @@ h4 {
     font-size: 20px;
     font-weight: bold;
 }
-.bookBtn{
+
+.bookBtn {
     background-color: red;
     color: white;
     text-align: center;
@@ -663,80 +697,109 @@ h4 {
     box-shadow: 2px 2px 2px black;
 }
 
-.bookDate{
+
+.bookPerPeople {
+    text-align: right;
+}
+
+.bookPrice {
+    text-align: left;
+}
+
+.bookDate {
+
     width: 130px;
 }
-.bookNumber{
+
+.bookNumber {
     width: 130px;
 }
-.reviewPersonPic{
+
+.reviewPersonPic {
     width: 120px;
     margin-left: 150px;
 }
-.reviewHeader{
+
+.reviewHeader {
     font-weight: bold;
     font-size: 30px;
     margin-left: 70px;
     margin-top: 20px;
 }
-.reviewRow1,  .reviewRow2{
+
+.reviewRow1,
+.reviewRow2 {
     margin-left: 70px;
     font-size: 20px;
     font-weight: bold;
 }
-.reviewPerson1Comment{
+
+.reviewPerson1Comment {
     margin-left: 70px;
     margin-right: 70px;
 }
-.reviewPerson2Comment{
-     margin-left: 70px;
-     margin-right: 70px;
+
+.reviewPerson2Comment {
+    margin-left: 70px;
+    margin-right: 70px;
 }
-reviewCommentTable{
+
+reviewCommentTable {
     margin-top: 40px;
 }
-.reviewDate{
+
+.reviewDate {
     margin-left: 70px;
 }
-.reviewRow2{
+
+.reviewRow2 {
     margin-bottom: 5px;
 }
+
 .reviewCommentRow{
     font-size: 20px;
 }
 
 .hostinfoHr, .reviewHr{
+
     border-color: black;
     margin-left: 70px;
     margin-right: 70px;
 }
 
-.bookBody{
+.bookBody {
     background-color: white;
     line-height: 200%;
 }
-.reviewSmallHr{
+
+.reviewSmallHr {
     border-color: black;
     margin-left: 300px;
     margin-right: 70px;
 }
-.reviewBtn{
+
+.reviewBtn {
     text-align: center;
     margin-bottom: 20px;
     margin-top: 20px;
 }
-.reviewBtn button{
+
+.reviewBtn button {
     color: red;
 }
 
-.reviewHeader img, .reviewRow1 img, .reviewRow2 img{
+.reviewHeader img,
+.reviewRow1 img,
+.reviewRow2 img {
     width: 120px;
 }
-.reviewCommentDetail{
+
+.reviewCommentDetail {
     font-size: 20px;
     font-weight: bold;
 }
-.reviewTriangle img{
+
+.reviewTriangle img {
     width: 20px;
 }
 
@@ -787,7 +850,7 @@ reviewCommentTable{
     max-width: 100%;
     width: 100%;
     height: 500px;
-    margin-top: -80px;
+    margin-top: -100px;
 }
 
 img.brand {
@@ -997,5 +1060,6 @@ ul.nav_sign {
 
 
 /*home page */
+
 
 /*style -------------------------- Leo*/
