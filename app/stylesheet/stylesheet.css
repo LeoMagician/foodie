@@ -82,8 +82,8 @@
 
 .loginfooterspan {
     position: absolute;
-    overflow:  auto;
-    cursor:  default;
+    overflow: auto;
+    cursor: default;
     left: 0px;
     right: 400px;
 }
@@ -589,9 +589,7 @@ h4 {
 
 /*style----------------------------------------Xingshu*/
 
-
 .hostInfoName {
-
     font-size: 40px;
     margin-left: 70px;
 }
@@ -624,19 +622,24 @@ h4 {
     font-size: 20px;
 }
 
-.hostInfo, .review, .personInfo_container, .description_container{
+.hostInfo,
+.review,
+.personInfo_container,
+.description_container {
     font-size: 15px;
     font-family: Consolas;
     border-top: 1px solid #DCDCDC;
-/*
+    /*
     border:1px solid black;*/
 }
+
 .hostInfo {
     background-color: #f5f5f5;
     padding-bottom: 10px;
 }
 
-.hostInfo,.review {
+.hostInfo,
+.review {
     font-family: Consolas;
 }
 
@@ -652,7 +655,7 @@ h4 {
     width: 300px;
     height: 320px;
     background-color: white;
-     border-radius: 25px;
+    border-radius: 25px;
 }
 
 .bookDetail {
@@ -683,6 +686,7 @@ h4 {
     height: 30px;
     box-shadow: 2px 2px 2px black;
 }
+
 .bookPerPeople {
     text-align: right;
 }
@@ -698,9 +702,11 @@ h4 {
 .bookNumber {
     width: 130px;
 }
-.bookWishFoodie{
-   color: #CC33FF
+
+.bookWishFoodie {
+    color: #CC33FF
 }
+
 .reviewPersonPic {
     width: 120px;
     margin-left: 150px;
@@ -713,7 +719,8 @@ h4 {
     margin-top: 20px;
 }
 
-.reviewRow1,.reviewRow2 {
+.reviewRow1,
+.reviewRow2 {
     margin-left: 70px;
     font-size: 20px;
     font-weight: bold;
@@ -741,12 +748,12 @@ reviewCommentTable {
     margin-bottom: 5px;
 }
 
-.reviewCommentRow{
+.reviewCommentRow {
     font-size: 20px;
 }
 
-.hostinfoHr, .reviewHr{
-
+.hostinfoHr,
+.reviewHr {
     border-color: black;
     margin-left: 70px;
     margin-right: 70px;
@@ -773,7 +780,9 @@ reviewCommentTable {
     color: red;
 }
 
-.reviewHeader img,.reviewRow1 img,.reviewRow2 img {
+.reviewHeader img,
+.reviewRow1 img,
+.reviewRow2 img {
     width: 120px;
 }
 
@@ -786,43 +795,52 @@ reviewCommentTable {
     width: 20px;
 }
 
-.book-temp{
+.book-temp {
     height: 320px;
     z-index: 1;
     position: absolute;
     top: 1230px;
     right: 120px;
 }
+
+
 /*.book-temp{
     position: fixed;
     z-index: 1;
     right: 70px;
     top:400px;
 }*/
-.personInfo5star img{
+
+.personInfo5star img {
     width: 200px;
 }
-.bookWishBtn{
+
+.bookWishBtn {
     width: 220px;
     height: 30px;
     background-color: lightgrey;
     border: 1px solid gray;
     font-weight: bold;
 }
-.bookReport{
+
+.bookReport {
     width: 220px;
     height: 30px;
     margin-left: 40px;
 }
-.bookLeftTable{
+
+.bookLeftTable {
     text-align: center;
 }
-.bookSavedNumber{
+
+.bookSavedNumber {
     font-size: 18px;
     margin-top: 1em;
 }
 
+
 /*style-------------------------Xingshu*/
+
 
 /*style -------------------------- Leo*/
 
@@ -1008,18 +1026,6 @@ ul.nav_sign {
 .span-food-check {
     font-size: 15px;
     padding-right: 20px;
-}
-
-.dinner-list-container {
-    -moz-column-count: 2;
-    -webkit-column-count: 2;
-    column-count: 2;
-}
-
-.dinner_col {
-    background: url(/app/images/pic/chinesefood02.jpg) no-repeat;
-    width: 400px;
-    height: 350px;
 }
 
 .sidebar-map {
