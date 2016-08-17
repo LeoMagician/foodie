@@ -282,7 +282,7 @@ footer {
      margin-left: 70px;
      margin-right: 70px;
 }
-reviewCommentTable{
+.reviewCommentTable{
     margin-top: 40px;
 }
 .reviewDate{
@@ -538,9 +538,8 @@ ul.nav_sign {
 
 
 
-/*style -------------------------- Jianing*/
 
-/*login page */
+
 .loginfont {
     font-family: Consolas;
 }
@@ -577,9 +576,6 @@ ul.nav_sign {
     text-align: center;
 }
 
-/*login page */
-
-/*personInfo temp */
 
 .personInfo_container {
     font-family: Consolas;
@@ -706,9 +702,7 @@ ul.nav_sign {
     height: 25px;
 }
 
-/*personInfo temp */
 
-/*description temp */
 .description_container {
     font-family: Consolas;
     font-size: 14px;
@@ -959,9 +953,6 @@ h4 {
     height: 25px;
 }
 
-/*description temp */
-
-/*dinnerListSide temp */
 .dinnerListSidebar .dinnerListFilter {
     display: block;
     left: 0;
@@ -1002,13 +993,7 @@ h4 {
     margin-bottom: 12px;
 }
 
-/*.col-md-6 {
-    width: 50%;
-    float: left;
-}*/
-
 .col-sm-12 {
-    /*width: 100%;*/
     width: 400px;
     float: left;
     height: 300px;
@@ -1025,26 +1010,6 @@ h4 {
     margin-left: -12px;
     margin-right: -12px;
 }
-
-/*.panel_img {
-    position: left;
-}
-
-.listing_img {
-    overflow: hidden;
-    padding-bottom: 67%;
-}
-
-.listing_card{
-    padding: 10px;
-}
-
-.panel_body {
-    position: relative; 
-    margin: 0;
-    padding: 20px;
-    border-top: 1px solid #dce0e0;  
-}*/
 
 .h3 {
     display: block;
@@ -1093,6 +1058,3 @@ h3.listing_name {
     height: 260px;
 }
 
-/*dinnerListSide temp */
-
-/*style -------------------------- Jianing*/
