@@ -624,9 +624,6 @@ h4 {
     font-size: 20px;
 }
 
-.hostInfo{
-    background-color: #f5f5f5;
-}
 .hostInfo, .review, .personInfo_container, .description_container{
     font-size: 15px;
     font-family: Consolas;
@@ -635,19 +632,15 @@ h4 {
     border:1px solid black;*/
 }
 .hostInfo {
-    background-color: #DCDCDC;
+    background-color: #f5f5f5;
+    padding-bottom: 10px;
 }
 
-.hostInfo,
-.review {
-    margin-left: 100px;
+.hostInfo,.review {
     font-family: Consolas;
-    margin-right: 100px;
-    border: 2px solid black;
 }
 
 .bookReservation {
-
     text-align: center;
     font-weight: bold;
 }
@@ -673,7 +666,6 @@ h4 {
 }
 
 .bookTableHeader {
-
     margin-left: auto;
     margin-right: auto;
     width: 300px;
@@ -691,8 +683,6 @@ h4 {
     height: 30px;
     box-shadow: 2px 2px 2px black;
 }
-
-
 .bookPerPeople {
     text-align: right;
 }
@@ -702,14 +692,15 @@ h4 {
 }
 
 .bookDate {
-
     width: 130px;
 }
 
 .bookNumber {
     width: 130px;
 }
-
+.bookWishFoodie{
+   color: #CC33FF
+}
 .reviewPersonPic {
     width: 120px;
     margin-left: 150px;
@@ -722,8 +713,7 @@ h4 {
     margin-top: 20px;
 }
 
-.reviewRow1,
-.reviewRow2 {
+.reviewRow1,.reviewRow2 {
     margin-left: 70px;
     font-size: 20px;
     font-weight: bold;
@@ -783,9 +773,7 @@ reviewCommentTable {
     color: red;
 }
 
-.reviewHeader img,
-.reviewRow1 img,
-.reviewRow2 img {
+.reviewHeader img,.reviewRow1 img,.reviewRow2 img {
     width: 120px;
 }
 
