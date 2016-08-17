@@ -1,8 +1,8 @@
 <div class="book">
     <table class="bookTableHeader">
         <tr>
-            <td ng-model="bookPrice" ng-init="bookPrice='29'"><span class="bookPrice"> $ {{bookPrice}}</span></td>
-            <td class="bookPerPeople">Per People</td>
+            <td ng-model="bookPrice" ng-init="bookPrice='29'"><span class="pull-left"> $ {{bookPrice}}</span></td>
+            <td class="pull-right">Per People</td>
         </tr>
     </table>
     <div class="bookBody">
@@ -18,5 +18,10 @@
     </table>
     <a href=""><button class="bookBtn">Book a Dinner</button></a><br>
     <p ng-model="bookSeat" ng-init="bookSeat='10'" class="bookSeat">{{bookSeat}} seats left, hurry up!</p>
+    </div>
+    <div class="bookLeftTable">
+        <button class="bookWishBtn" ng-click="bookWishNumber = bookWishNumber + 1" ng-init="bookWishNumber=0"><span class="glyphicon glyphicon-heart-empty"> Save to Wish List</span></button>
+        <p class="bookSavedNumber"><span class="bookWishFoodie">{{bookWishNumber}}</span> Foodies saved this page</p>
+        <div class="bookReport"><span class="glyphicon glyphicon-flag">&nbsp; Report this page</span></div>
     </div>
 </div>
