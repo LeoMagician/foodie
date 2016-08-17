@@ -993,17 +993,15 @@ h4 {
     margin-bottom: 12px;
 }
 
-.col-sm-12 {
-    width: 400px;
-    float: left;
-    height: 300px;
-}
 
-.col-md-6 .col-sm-12 {
+.dinner_col_sm_12 {
     position: relative;
     min-height: 1px;
     padding-left: 12px;
     padding-right: 12px;
+    width: 400px;
+    float: left;
+    height: 300px;
 }
 
 .dinnerListRow {
