@@ -5,7 +5,8 @@ define(function() {
             $scope.test = 'test';
             $scope.items = ['item1', 'item2', 'item3'];
             $scope.animationsEnabled = false;
-
+            $scope.url = $location.path();
+            $scope.dinnerListUrl = '/dinnerList'
             $scope.open = function(size) {
 
                 var modalInstance = $uibModal.open({
