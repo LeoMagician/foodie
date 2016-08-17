@@ -42,14 +42,6 @@ define(function() {
                 templateUrl: '/app/modules/views/templates/dinnerList/dinnerMap.html',
                 replace: false
             }
-        })
-// New_Jianing
-        .directive("dinnerListSide", function() {
-            return {
-                restrict: 'AC',
-                templateUrl: '/app/modules/views/templates/dinnerList/dinnerListSide.html',
-                replace: false
-            }
         });
 
 });
