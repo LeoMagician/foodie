@@ -4,4 +4,5 @@ define(function() {
     coreModule.controller('uploadPhotoController', function($scope) {
         $scope.name = "uploadPhotoController";
     });
+    
 });

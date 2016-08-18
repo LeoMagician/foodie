@@ -82,6 +82,14 @@ define(function() {
             .when('/setRules', {
                 controller: 'setRulesController',
                 templateUrl: '/app/modules/views/setGuestView/setRules.html'
+            })
+            .when('/manageListing', {
+                controller: 'manageListingController',
+                templateUrl: '/app/modules/views/manageListView/manageListing.html'
+            })
+            .when('/manageReservation', {
+                controller: 'manageReservationController',
+                templateUrl: '/app/modules/views/manageListView/manageReservation.html'
             });
     }]);
 
