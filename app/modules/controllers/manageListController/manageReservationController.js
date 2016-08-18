@@ -1,7 +1,7 @@
 define(function() {
     var coreModule = angular.module('coreModule');
 
-    coreModule.controller('createDinnerController', function($scope) {
+    coreModule.controller('manageReservationController', function($scope) {
        
     })
 });
