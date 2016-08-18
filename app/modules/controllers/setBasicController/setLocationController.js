@@ -4,4 +4,5 @@ define(function() {
     coreModule.controller('setLocationController', function($scope) {
         $scope.name = "setLocationController";
     });
+
 });
