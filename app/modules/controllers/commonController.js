@@ -7,6 +7,7 @@ define(function() {
             $scope.animationsEnabled = false;
             $scope.url = $location.path();
             $scope.dinnerListUrl = '/dinnerList'
+           
             $scope.open = function(size) {
 
                 var modalInstance = $uibModal.open({
@@ -56,11 +57,22 @@ define(function() {
                 replace: true
             }
         })
-        .directive("footerTemp", function() {
+        .directive("footerTemp", function($location) {
             return {
                 restrict: 'AC',
                 templateUrl: '/app/modules/views/templates/footerTemp.html',
                 replace: true
+                // scope: {
+                //     fixBottom: "="
+                // },
+                // link: function(scope, elements, atrrs) {
+                //      scope.url = $location.path();
+                //      if (scope.url === '/createDinner') {
+                //         scope.fixBottom="vabar-fixed-bottom";
+                //      } else {
+                //         scope.fixBottom ='';
+                //      }
+                // }
             }
         });
 
