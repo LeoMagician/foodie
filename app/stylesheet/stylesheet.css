@@ -1885,3 +1885,314 @@ h3.listing_name {
     -webkit-margin-start: 0px;
     -webkit-margin-end: 0px;
 }
+
+/*August 17 ----------------------------------------------Xingshu*/
+
+.startDinnerHostBody{
+display:inline-block;
+float:left;
+height:600px;
+margin-left: 150px;
+}
+.startDinnerHostImg img{
+display:inline-block;
+float:right;
+height:600px;
+margin-right: 150px;
+}
+.startDinnerHostBtn{
+background-color:green;
+font-weight:bold;
+box-shadow: 2px 2px 2px black;
+width:120px;
+
+}
+.startDinnerHostBtn a{
+    color: white;
+} 
+.createDinnerTemp{
+    font-family: Consolas;
+    font-size:20px;
+}
+.uploadPhotoLeftTable{
+    width: 700px;
+    height: 400px;
+    border: 1px solid black;
+    margin-bottom: 30px;
+}
+.uploadPhotoTemp, .setFoodTypeTemp,.setDescriptionTemp,.setDinnerNameTemp, .setDateTemp,.setPriceTemp, .setDiscountTemp, .setRulesTemp, .manageReservationTemp{
+    margin-left: 200px;
+    margin-right: 200px;
+    width: 100%;
+    font-family: Consolas;
+}
+.uploadPhotLeftContent{
+    margin-top: 180px;
+    text-align: center;
+}
+.uploadPhotLeftContent button{
+    box-shadow: 2px 2px 2px black;
+    background-color: white;
+    font-weight: bold;
+    width:200px;
+    height: 50px;
+}
+.uploadPhotoLeftPhotos{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.uploadPhotoFooter, .setFoodTypeFooter, setDescriptionFooter, .setDinnerNameFooter, .setDateFooter, .setPriceFooter, .setDiscountFooter{
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+.uploadPhotoFooterBack, .setFoodTypeFooterBack, setDescriptionFooterBack, .setDinnerNameFooterBack, .setDateFooterBack, .setDateFooterBack, .setDiscountFooterBack{
+    float: left;
+    margin-left: 20px;
+}
+.uploadPhotoFooterBtn a{
+    margin-left: 560px;
+    width: 200px;
+     box-shadow: 2px 2px black;
+}
+.uploadPhotoFile{
+    margin-left: 330px;
+    margin-top:-30px;
+     /*visibility:hidden;*/
+     z-index: 1;
+}
+.uploadePhotoRight{
+    margin-left: 200px;
+}
+.setFoodTypeLeftTable{
+    margin-left:50px;  
+}
+.setFoodTypeLeftTable tr td{
+    font-size: 20px;
+    padding:10px;
+}
+.setFoodTypeRight,.setDescriptionRight, .setDinnerNameRight, .setDateRight ,.setPriceRight, .setDiscountRight, .manageListingRight, .manageReservationRight{
+    margin-left: 200px;
+}
+.setFoodTypeHr{
+    color: black;
+}
+.setFoodTypeFooterBtn a{
+    margin-left: 580px;
+     width: 200px;
+     box-shadow: 2px 2px black;
+}
+.setDescriptionTextare textarea{
+    height: 250px;
+    width: 700px;
+    margin-bottom: 100px;
+}
+.setDescriptionFooterBtn a{
+     margin-left: 580px;
+     width: 200px;
+     box-shadow: 2px 2px black;
+}
+.setDescriptionLeftWhat{
+    margin-bottom: 40px;
+
+}
+.setDinnerNameFooterBtn a{
+    margin-left: 580px;
+     width: 200px;
+     box-shadow: 2px 2px black;
+}
+.setDinnerNameText input{
+    width:700px;
+    height: 50px;
+    font-size: 20px;
+    margin-bottom: 300px;
+    margin-top: 40px;
+
+}
+.setMenuNavbar ul{
+    width: 100%;
+}
+.setMenuNavbar nav ul li{
+    width: 25%;
+}
+.setGuestNavbar ul{
+    width: 100%;
+}
+.setGuestNavbar nav ul li{
+    width: 25%;
+}
+.setDateCalendar{
+    margin-bottom: 300px;
+}
+.setDateCalendar input{
+    width: 200px;
+    height: 50px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.setDateFooterBtn a{
+    margin-left: 560px;
+    width: 200px;
+    box-shadow: 2px 2px black;
+}
+.setPriceWhat{
+    margin-bottom: 30px;
+}
+.setPriceLeft{
+    font-size: 20px;
+    width:680px;
+    line-height: 200%;
+}
+.setPriceLeft input{
+    width: 100px;
+    height: 30px;
+}
+.setPriceTable{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.setPriceFooterBtn a{
+    margin-left: 560px;
+    width: 200px;
+     box-shadow: 2px 2px black;
+}
+.setDiscountFee{
+    margin-bottom: 200px;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 40px;
+
+}
+.setDiscountFee input{
+    height: 40px;
+}
+.setDiscountLeft{
+    width: 680px;
+}
+.setDiscountFooterBtn a{
+    margin-left: 560px;
+    width: 200px;
+     box-shadow: 2px 2px black;
+}
+.setDiscountFooterBack{
+    margin-top: 40px;
+}
+.setPriceTable{
+    margin-bottom: 250px;
+}
+.setPriceBorder{
+    border:1px solid black;
+    border-radius: 5px;
+    margin:3px;
+
+}
+.setPriceItem{
+    font-size: 20px;
+    line-height: 200%;
+}
+.manageListingOrder{
+    border: 1px solid black;
+    margin-bottom: 50px;
+    width: 260px;
+    font-weight: bold;
+    font-size: 25px;
+}
+.manageListingTableHeader{
+    background-color: #f5f5f5;
+    height: 40px;
+    font-size: 20px;
+    border: 1px solid black;
+    font-weight: bold;
+}
+.manageListingAddBtn  a{
+    width: 260px;
+    font-size: 25px;
+}
+.manageListingTableBody{
+    border:1px solid black;
+    height: 400px;
+}
+.manageListingTableBody td img{
+    border: 1px solid black;
+    margin:0 40px 20px 40px;
+}
+.manageListingRow{
+    margin-top: 30px;
+    margin-bottom: 80px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.manageListingRight{
+    width: 800px;
+}
+.manageLisingGreen{
+    color: green;
+}
+.manageListingDinnerTitle{
+    font-size: 25px;
+    font-weight: bold;
+}
+.manageListingIntalic{
+    font-style: italic;
+} 
+.manageListingFinshBtn a{
+    box-shadow: 2px 2px black;
+}
+.manageListingPreview a{
+    box-shadow: 2px 2px black;
+}
+/*.manageListingOrder p:hover:not(.active){
+    background-color: white;
+}*/
+.manageReservationTemp{
+    margin-bottom: 80px;
+}
+.manageListingOrder p.active{
+    background-color: #CCCCFF;
+}
+.manageListingOrder p:hover{
+    background-color: #CCCCFF;
+}
+.manageListingOrder a{
+    text-decoration: none;
+}
+.manageReservationTable{
+    border: 1px solid black;
+    width:500px;
+    height: 300px;
+    padding:5px;
+    text-align: center;
+    border-collapse: collapse;
+    margin-left: 100px;
+}
+.manageReservationTable th{
+    background-color: gray;
+    text-align: center;
+    border: 1px solid black;
+    border-bottom: none;
+}
+.manageReservationTable td{
+    border: 1px solid black;
+    border-bottom: none;
+    border-top: none;
+}
+
+.manageReservationTable tr{
+    border: 0;
+}
+.manageReservationTable tr:nth-child(odd){
+    background:#f5f5f5;
+}
+.manageReservationTableBody{
+    border: 1px solid black;
+    width: 700px;
+    height: 440px;
+}
+.manageReservationTableBody h4{
+    margin-left: 100px;
+}
+
+
+
+
+
+
