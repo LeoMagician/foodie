@@ -1,4 +1,16 @@
 <div class="setPlaceType_container">
+
+    <div class="setBasicNavbar">
+        <nav class="navbar navbar-default">
+            <ul class="nav navbar-nav">
+                <li><a href="#/setLocation">Location</a></li>
+                <li class="active"><a href="#/setPlaceType">Place Type</a></li>
+                <li><a href="#/setGuestNum">Guest Number</a></li>
+                <li><a href="#/setAmenity">Amenity</a></li>
+            </ul>
+        </nav>
+    </div>
+
     <div class="setBasic_list_space_content">
         <div class="setBasic_centered_content">
             <div class="setBasic_main_panel_container setBasic_main_panel_outer_half setBasic_no_padding_h setBasic_bg_white">
@@ -55,7 +67,7 @@
                                                 </span>
                                             </a>
                                             <a class="setBasic_a setBasic_btn setBasic_btn_large setBasic_btn_next setBasic_btn_large_next setBasic_pull_right_md setBasic_btn_primary"
-                                                href="#/setGuestNum">
+                                                href="#/setGuestNum" id="setBtn_same">
                                                 <div class="setBasic_btn_next_text"><span>Next</span></div>
                                             </a>
                                         </div>
@@ -73,8 +85,14 @@
                         <div class="setLocation_help_panel-bulb_img"></div>
                         <div class="setLocation_help_panel_text">
                             <div class="setLocation_p">
-                                <p><span>Indoor</span></p>
-                                <p><span>Outdoor</span></p>                                
+                                <p>
+                                    <span id="setBasic_help_panel_title">Indoor</span><br>
+                                    <span>Guests will enjoy their dinner indoor.</span>
+                                </p>
+                                <p>
+                                    <span id="setBasic_help_panel_title">Outdoor</span><br>
+                                    <span>Guests will enjoy their dinner outdoor. Includes garden, balcony, etc.</span>
+                                </p>
                             </div>
                         </div>
                     </div>
