@@ -98,6 +98,7 @@
 .btnloginsignup {
     background-color: #FF6666;
     text-align: center;
+    color: white;
 }
 
 footer {
@@ -1061,14 +1062,14 @@ ul.nav_sign {
 
 .dinnerListSidebar {
     position: fixed;
-    top: 47px;
+    top: 75px;
     left: 0;
     bottom: 0;
     width: 60%;
     overflow-y: scroll;
     -webkit-overflow-scrolling: touch;
     background: #f7f7f7;
-    font-family: Circular,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: Consolas;
     font-size: 14px;
     line-height: 1.43;
     color: #484848;
@@ -1087,7 +1088,7 @@ ul.nav_sign {
     -moz-column-count: 2;
     -webkit-column-count: 2;
     column-count: 2;
-    padding: 0 20px;
+    padding: 0 28px;
 }
 
 .space-2 {
@@ -1297,7 +1298,7 @@ h3.listing_name {
     text-indent: 0px;
     text-shadow: none;
     text-align: start;
-    font: 9.33333px Arial;
+    /*font: 9.33333px Arial;*/
 }
 
 .setBasic_row {
@@ -1337,7 +1338,6 @@ h3.listing_name {
     text-indent: 0px;
     text-shadow: none;
     text-align: start;
-    font: 9.33333px Arial;
 }
 
 .setBasic_input input[type="text"] {
@@ -1367,7 +1367,7 @@ h3.listing_name {
 }
 
 .setBasic_help_panel_container {
-    top: 71px;
+    top: 180px;
     left: 50%;
     margin-left: 91.2px;
     position: fixed;
@@ -1401,9 +1401,11 @@ h3.listing_name {
 
 .setLocation_help_panel-bulb_img {
     background-image: url(/app/images/icon/icon_light.png);
-    background-size: 22px 31px;
+    background-size: 50px 50px;
     margin-bottom: 14px;
     background-repeat: no-repeat;
+    height: 50px;
+    width: 50px;
 }
 
 .setLocation_help_panel_text {
@@ -1424,8 +1426,10 @@ h3.listing_name {
 
 .setLocation_tipAddress {
     background-image: url(/app/images/icon/icon_tipAddress.png);
-    background-size: 93px 93px;
+    background-size: 100px 100px;
     background-repeat: no-repeat;
+    height: 100px;
+    width: 100px;
 }
 
 .setBasic_main_panel_wrapper {
@@ -1484,7 +1488,7 @@ h3.listing_name {
 }
 
 .setBasic_a {
-    color: #ff5a5f;
+    color: black;
     text-decoration: none;
     background: transparent;
 }
@@ -1952,7 +1956,7 @@ width:120px;
 .uploadPhotoFooterBtn a{
     margin-left: 560px;
     width: 200px;
-     box-shadow: 2px 2px black;
+    box-shadow: 2px 2px black;
 }
 .uploadPhotoFile{
     margin-left: 330px;
@@ -2191,8 +2195,134 @@ width:120px;
     margin-left: 100px;
 }
 
+.dinnerListSide_space_8 {
+    margin-bottom: 48px;
+}
 
+.dinner_results_count {
+    margin: 0 0 5px 2px;
+    padding-left: 24px;
+}
 
+.dinner_pagination_container {
+    height: 20px;
+    margin: 18px 0;
+}
 
+.dinner_list_unstyled {
+    padding-left: 0;
+    list-style: none;
+}
 
+.dinner_pagination_container ul {
+    display: inline-block;
+    margin-left: 0;
+    margin-bottom: 0;
+    margin-top: 0;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 18px;
+}
+
+.dinner_pagination_container li {
+    display: inline;
+    text-align: -webkit-match-parent;
+}
+
+.dinner_pagination_container a, .dinner_pagination_container span{
+    float: left;
+    padding: 5px 10px;
+    margin-left: 10px;
+    text-decoration: none;
+    border: 1px solid #c4c4c4;
+    border-radius: 2px;
+    background-color: #fff;
+}
+
+.dinner_pagination_container a {
+    color: #ff5a5f;
+    background: transparent;
+}
+
+.dinner_pagination_container a:-webkit-any-link {
+    cursor: auto;
+}
+
+.dinner_pagination_container .dinnerList_gap span {
+    padding: 0 5px;
+    border: 0;
+    background: transparent;
+    box-shadow: 0 0 0 #000;
+}
+
+.dinner_pagination_container span {
+    float: left;
+    margin-left: 10px;
+    text-decoration: none;
+    border-radius: 2px;
+}
+
+.screen_reader_only {
+    clip: rect(0, 0, 0, 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    position: absolute;
+    width: 1px;
+}
+
+.dinnerList_icon {
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+}
+
+.dinnerList_icon:before {
+    /*line-height: 1;*/
+    font-family: Airglyphs, sans-serif;
+}
+
+.icon_caret_right {
+    background: url(/app/images/icon/icon_caret_right.png) no-repeat;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 3px;
+    width: 20px;
+    height: 20px;
+}
+
+.dinnerMap_container {
+    display: block;
+    width: 40%;
+    position: fixed;
+    right: 0;
+    left: auto;
+    bottom: 0;
+}
+
+.dinnerMap_img {
+    background: url(/app/images/pic/map.png) no-repeat;
+    display: inline-block;
+}
+
+#setBasic_help_panel_title {
+    color: #2d2d2d;
+    font-size: 20px;
+}
+
+.setBasicNavbar nav ul {
+    width: 100%;
+}
+
+.setBasicNavbar nav ul li {
+    width: 25%;
+}
+
+#setBtn_same {
+    color: white;
+    background-color: green;
+    box-shadow: 2px 2px black;
+}
 
