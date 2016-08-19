@@ -2305,6 +2305,8 @@ width:120px;
 .dinnerMap_img {
     background: url(/app/images/pic/map.png) no-repeat;
     display: inline-block;
+    height: 756px;
+    width: 680px;
 }
 
 #setBasic_help_panel_title {
@@ -2326,3 +2328,6 @@ width:120px;
     box-shadow: 2px 2px black;
 }
 
+#setMenuBtnBack a {
+    color:black;
+}
