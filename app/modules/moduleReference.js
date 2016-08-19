@@ -4,6 +4,8 @@ define(function() {
         'modules/controllers/homeController',
         'modules/controllers/dinnerController',
         'modules/controllers/dinnerListController',
+        'modules/controllers/manageListController/manageListingController',
+        'modules/controllers/manageListController/manageReservationController',
         'modules/controllers/createDinner/createDinnerController',
         'modules/controllers/setBasicController/setAmenityController',
         'modules/controllers/setBasicController/setGuestNumController',

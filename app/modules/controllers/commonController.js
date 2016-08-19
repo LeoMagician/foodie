@@ -5,11 +5,8 @@ define(function() {
             $scope.test = 'test';
             $scope.items = ['item1', 'item2', 'item3'];
             $scope.animationsEnabled = false;
-            $scope.url = $location.path();
-            $scope.dinnerListUrl = '/dinnerList'
-           
+            $scope.bottom = 'vabar-fixed-bottom';
             $scope.open = function(size) {
-
                 var modalInstance = $uibModal.open({
                     animation: $scope.animationsEnabled,
                     templateUrl: '/app/modules/views/templates/loginTemp.html',
@@ -62,17 +59,17 @@ define(function() {
                 restrict: 'AC',
                 templateUrl: '/app/modules/views/templates/footerTemp.html',
                 replace: true
-                // scope: {
-                //     fixBottom: "="
-                // },
-                // link: function(scope, elements, atrrs) {
-                //      scope.url = $location.path();
-                //      if (scope.url === '/createDinner') {
-                //         scope.fixBottom="vabar-fixed-bottom";
-                //      } else {
-                //         scope.fixBottom ='';
-                //      }
-                // }
+                    // scope: {
+                    //     fixBottom: "="
+                    // },
+                    // link: function(scope, elements, atrrs) {
+                    //      scope.url = $location.path();
+                    //      if (scope.url === '/createDinner') {
+                    //         scope.fixBottom="vabar-fixed-bottom";
+                    //      } else {
+                    //         scope.fixBottom ='';
+                    //      }
+                    // }
             }
         });
 
