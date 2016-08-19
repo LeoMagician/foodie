@@ -9,9 +9,11 @@
 
 <body ng-controller="commonController">
     <div class="header-temp"></div>
+
     <hr>
     <div ng-view></div>
-    <div class="footer-temp" ng-hide="url === dinnerListUrl"></div>
+    <div class="footer-temp" ng-hide="surl === dinnerListUrl"></div>
+
 </body>
 <script src="../bower_components/requirejs/require.js" data-main="../app/common.js"></script>
 
