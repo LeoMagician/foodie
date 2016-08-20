@@ -11,7 +11,8 @@ router.get('/', function (req, res) {
     var viewData = { success: req.session.success };
     delete req.session.success;
     
-    // res.render('login', viewData);
+    // res.render('index', viewData);
+    res.sendFile('../../../app/index.html');
 });
  
 router.post('/', function (req, res) {

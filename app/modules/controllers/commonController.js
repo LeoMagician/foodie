@@ -6,7 +6,7 @@ define(['modules/services/user.service',
         function(UserService, FlashService, UserInfoService) {
     
     var coreModule = angular.module('coreModule');
-    coreModule.controller('commonController', ['$scope', '$location', '$route', '$uibModal', '$http', function($scope, $location, $route, $uibModal, $http) {
+    coreModule.controller('commonController', function($scope, $location, $route, $uibModal, $http, UserInfoService) {
             $scope.userObj = UserInfoService.getUserInfo();
             $scope.bottom = 'vabar-fixed-bottom';
             $scope.open = function(size) {
@@ -23,7 +23,7 @@ define(['modules/services/user.service',
                     controller: 'signUpController'
                 });
             }
-        }])
+        })
         .directive("headerTemp", function() {
             return {
                 restrict: 'AC',

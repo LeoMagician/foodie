@@ -92,7 +92,7 @@ define(function() {
                     templateUrl: '/app/modules/views/manageListView/manageReservation.html'
                 });
         }])
-        .run(['$rootScope', function($http, $window, $rootScope) {
+        .run(['$http', '$window','$rootScope',  function($http, $window, $rootScope) {
             // add JWT token as default auth header
             $http.defaults.headers.common['Authorization'] = 'Bearer ' + $window.jwtToken;
             $rootScope.dinnerListUrl = "http://localhost:3000/#/dinnerList";
@@ -101,14 +101,14 @@ define(function() {
             });
         }]);
 
-    $(function() {
+    // $(function() {
         require(['modules/moduleReference'], function(references) {
             require(references, function() {
-                $.get('/app/token', function (token) {
-                    window.jwtToken = token;
+                // $.get('/app/token', function (token) {
+                    // window.jwtToken = token;
                     angular.bootstrap(document, ['coreModule']);
-                });
+                // });
             });
         });
-    })
+    // })
 });
