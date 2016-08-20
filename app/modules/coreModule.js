@@ -91,14 +91,23 @@ define(function() {
                     controller: 'manageReservationController',
                     templateUrl: '/app/modules/views/manageListView/manageReservation.html'
                 })
-                .when('/editProfile', {
-                    controller: 'editProfileController',
-                    templateUrl: '/app/modules/views/manageListView/editProfile.html'
+                .when('/manageDinner1', {
+                    controller: 'manageDinner1Controller',
+                    templateUrl: '/app/modules/views/manageListView/manageDinner1.html'
                 })
-                .when('/viewProfile', {
-                    controller: 'viewProfileController',
-                    templateUrl: '/app/modules/views/manageListView/viewProfile.html'
-                });
+                .when('/manageDinner2', {
+                    controller: 'manageDinner2Controller',
+                    templateUrl: '/app/modules/views/manageListView/manageDinner2.html'
+                })
+                .when('/manageDinnerLast', {
+                    controller: 'manageDinnerLastController',
+                    templateUrl: '/app/modules/views/manageListView/manageDinnerLast.html'
+                })
+                .when('/manageOrder', {
+                    controller: 'manageOrderController',
+                    templateUrl: '/app/modules/views/manageListView/manageOrder.html'
+                })
+
         }])
         .run(['$rootScope', function($rootScope) {
             $rootScope.dinnerListUrl = "http://localhost:3000/#/dinnerList";

@@ -1,36 +1,73 @@
-<div class="setMenuNavbar">
-<nav class="navbar navbar-default">
-    <ul class="nav navbar-nav">
-      <li><a href="#/uploadPhoto">Photo</a></li>
-      <li><a href="#/setFoodType">Food Type</a></li>
-      <li><a href="#/setDescription">Description</a></li> 
-      <li class="active"><a href="#/setDinnerName">Dinner Name</a></li> 
-    </ul>
-</nav>
+<!--<div class="setMenuNavbar">
+    <nav class="navbar navbar-default">
+        <ul class="nav navbar-nav">
+            <li><a href="#/uploadPhoto">Photo</a></li>
+            <li><a href="#/setFoodType">Food Type</a></li>
+            <li><a href="#/setDescription">Description</a></li>
+            <li class="active"><a href="#/setDinnerName">Dinner Name</a></li>
+        </ul>
+    </nav>
 </div>
 <div class="setDinnerNameTemp">
-    <table>
-        <tr>
-            <td>
-                <div class="setDinnerNameLeft">
-                    <h1 class="setDinnerNameWhat">Name your dinner!</h1>
+
+    <div class="setDinnerNameLeft">
+        <h1 class="setDinnerNameWhat">Name your dinner!</h1>
+        <div class="setDinnerNameTable">
+            <form class="setDinnerNameText">
+                <input type="text" name="dinnerName" placeholder="The best dinner ever!">
+            </form>
+        </div>
+        <hr class="setDinnerNameHr">
+        <div class="setDinnerNameFooter">
+            <span class="setDinnerNameFooterBack"><a href="#/setDescription">< Back</a> </span>
+            <span class="setDinnerNameFooterBtn"><a href="#/createDinner" class="btn btn-success" role="button">Finish</a></span>
+        </div>
+    </div>
+
+    <div class="setDinnerNameRight">
+        <img src="images/pic/noodle.jpg">
+    </div>
+</div>
+</div>-->
+
+<div class="setDinnerNameTemp">
+    <div class="setMenuNavbar">
+        <nav class="navbar navbar-default">
+            <ul class="nav navbar-nav">
+                <li><a href="#/uploadPhoto">Photo</a></li>
+                <li><a href="#/setFoodType">Food Type</a></li>
+                <li><a href="#/setDescription">Description</a></li>
+                <li class="active"><a href="#/setDinnerName">Dinner Name</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="uploadPhotTalbe">
+        <div class="col-sm-8">
+            <div class="setMenuLeft">
+                <h1 class="uploadPhotoLeftPhotos">Edit your description</h1>
+                <div class="setMenuTable">
                     <div class="setDinnerNameTable">
                         <form class="setDinnerNameText">
                             <input type="text" name="dinnerName" placeholder="The best dinner ever!">
                         </form>
                     </div>
-                    <hr class="setDinnerNameHr">
-                    <div class="setDinnerNameFooter">
-                        <span class="setDinnerNameFooterBack" id="setMenuBtnBack"><a href="#/setDescription">Back</a> </span>
-                        <span class="setDinnerNameFooterBtn"><a href="#/createDinner" class="btn btn-success" role="button">Finish</a></span>
-                    </div>
                 </div>
-            </td>
-            <td>
-                <div class="setDinnerNameRight">
-                    <img src="images/pic/host01.jpg">
+                <hr>
+                <div class="uploadPhotoFooter">
+                    <span class="setDinnerNameFooterBack"><a href="#/setDescription">< Back</a> </span>
+                    <span class="setDinnerNameFooterBtn"><a href="#/createDinner" class="btn btn-success" role="button">Finish</a></span>
                 </div>
-            </td>
-        </tr>
-    </table>
+            </div>
+        </div>
+
+        <div class="col-sm-4">
+            <div class="setMenuRight">
+                <div class="setLocation_help_panel-bulb_img"></div>
+                <p>Name your dinner and share to everyone.</p>
+                <img src="images/pic/noodle.jpg">
+            </div>
+        </div>
+
+    </div>
 </div>

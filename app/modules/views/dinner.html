@@ -1,4 +1,34 @@
+<!--<script>
 
+    $(document).ready(function () {
+    $function(){
+        var bookHeight = "500px";
+        $(Window).scroll(function () {
+            var scrollHeight = $(this).scrollTop();
+            if (scrollHeight >= bookHeight) {
+                $(".book-temp").css(
+                    {
+                       "position":"fixed", 
+                       "z-index":"1",
+                       "right":"70px",
+                       "top":"400px"
+                       
+                    }
+                );
+            } else if (scrollHeight < bookHeight) {
+                $(".book-temp").css({
+                    "height":"320px",
+                    "z-index":"1",
+                    "position":"absolute",
+                    "top":"1230px",
+                    "right":"120px"
+                   
+                })
+            }
+        })
+    }
+})
+</script>-->
 <div class="dinner">
     <div class="book-temp">
     </div>
@@ -20,4 +50,3 @@
     </div>
 </div>
 
-</div>
