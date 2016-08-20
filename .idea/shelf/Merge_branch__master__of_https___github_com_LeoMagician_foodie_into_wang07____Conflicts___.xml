@@ -1,0 +1,89 @@
+<changelist name="Merge_branch__master__of_https___github_com_LeoMagician_foodie_into_wang07____Conflicts___" date="1471708595410" recycled="false">
+  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Merge_branch__master__of_https___github_com_LeoMagician_foodie_into_wang07____Conflicts___/shelved.patch" />
+  <option name="DESCRIPTION" value="Merge branch 'master' of https://github.com/LeoMagician/foodie into wang07  # Conflicts: #&#9;app/modules/coreModule.js #&#9;app/modules/moduleReference.js #&#9;app/modules/views/manageListView/manageListing.html #&#9;app/modules/views/manageListView/manageReservation.html #&#9;app/modules/views/setMenuView/setDescription.html #&#9;app/modules/views/setMenuView/setDinnerName.html #&#9;app/modules/views/setMenuView/setFoodType.html #&#9;app/modules/views/setMenuView/uploadPhoto.html #&#9;app/stylesheet/stylesheet.css " />
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="app/images/pic/driedTofu.jpg" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Merge_branch__master__of_https___github_com_LeoMagician_foodie_into_wang07____Conflicts___/driedTofu.jpg" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="app/images/pic/boiledFish.jpg" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Merge_branch__master__of_https___github_com_LeoMagician_foodie_into_wang07____Conflicts___/boiledFish.jpg" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="app/images/pic/eggplant.jpg" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Merge_branch__master__of_https___github_com_LeoMagician_foodie_into_wang07____Conflicts___/eggplant.jpg" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="app/images/pic/hotpot.jpg" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Merge_branch__master__of_https___github_com_LeoMagician_foodie_into_wang07____Conflicts___/hotpot.jpg" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="app/images/pic/moneyBasket.jpg" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Merge_branch__master__of_https___github_com_LeoMagician_foodie_into_wang07____Conflicts___/moneyBasket.jpg" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="app/images/pic/chili.jpg" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Merge_branch__master__of_https___github_com_LeoMagician_foodie_into_wang07____Conflicts___/chili.jpg" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="app/images/pic/clock1.jpg" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Merge_branch__master__of_https___github_com_LeoMagician_foodie_into_wang07____Conflicts___/clock1.jpg" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="app/images/pic/noodle.jpg" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Merge_branch__master__of_https___github_com_LeoMagician_foodie_into_wang07____Conflicts___/noodle.jpg" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="app/images/pic/dinnerTable.jpg" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Merge_branch__master__of_https___github_com_LeoMagician_foodie_into_wang07____Conflicts___/dinnerTable.jpg" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="app/images/icon/right.png" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Merge_branch__master__of_https___github_com_LeoMagician_foodie_into_wang07____Conflicts___/right.png" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="app/images/pic/kungpaoChicken.jpg" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Merge_branch__master__of_https___github_com_LeoMagician_foodie_into_wang07____Conflicts___/kungpaoChicken.jpg" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="app/images/pic/sweetChicken.jpg" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Merge_branch__master__of_https___github_com_LeoMagician_foodie_into_wang07____Conflicts___/sweetChicken.jpg" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="app/images/pic/camera.jpg" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Merge_branch__master__of_https___github_com_LeoMagician_foodie_into_wang07____Conflicts___/camera.jpg" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="app/images/icon/cross.png" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Merge_branch__master__of_https___github_com_LeoMagician_foodie_into_wang07____Conflicts___/cross.png" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="app/images/pic/jackfruitCake.jpg" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Merge_branch__master__of_https___github_com_LeoMagician_foodie_into_wang07____Conflicts___/jackfruitCake.jpg" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="app/images/pic/mapoTofu.jpg" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Merge_branch__master__of_https___github_com_LeoMagician_foodie_into_wang07____Conflicts___/mapoTofu.jpg" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="app/images/pic/greenOnionPie.jpg" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Merge_branch__master__of_https___github_com_LeoMagician_foodie_into_wang07____Conflicts___/greenOnionPie.jpg" />
+  </binary>
+</changelist>
