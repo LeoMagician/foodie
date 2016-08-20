@@ -1923,12 +1923,14 @@ width:120px;
     height: 400px;
     border: 1px solid black;
     margin-bottom: 30px;
+    margin-left: 50px;
 }
 .uploadPhotoTemp, .setFoodTypeTemp,.setDescriptionTemp,.setDinnerNameTemp, .setDateTemp,.setPriceTemp, .setDiscountTemp, .setRulesTemp, .manageReservationTemp{
-    margin-left: 200px;
-    margin-right: 200px;
+    height: 1000px;
     width: 100%;
     font-family: Consolas;
+    background-color: #f5f5f5;
+
 }
 .uploadPhotLeftContent{
     margin-top: 180px;
@@ -1961,7 +1963,7 @@ width:120px;
 .uploadPhotoFile{
     margin-left: 330px;
     margin-top:-30px;
-     /*visibility:hidden;*/
+     visibility:hidden;
      z-index: 1;
 }
 .uploadePhotoRight{
@@ -2325,4 +2327,209 @@ width:120px;
     background-color: green;
     box-shadow: 2px 2px black;
 }
+.manageDinnerTemp{
+    height: 1150px;
+    width: 100%;
+    font-family: Consolas;
+}
+.manageDinnerBody{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.manageDinnerPic img{
+    height: 300px;
+    width: 240px;
+    margin-left: 50px;
+    margin-top: 35px;
+}
+.manageDinnerBtn{
+    text-align: center;
+}
+.manageDinnerBtn ul li{
+    display: inline;
+    width: 110px;
+}
+.manageDinnerBtn ul li a{
+    border: 1px solid black;
+    width:110px;
+    box-shadow: 2px 2px gray;  
+    color: red;
+}
+.manageDinnerTitle{
 
+    font-weight: bold;
+    color: #ff5a5f;
+}
+.manageDinnerDetail{
+    margin-bottom: 50px;
+}
+.manageDinnerDescription{
+    font-size: 16px;
+}
+.manageDinnerHR{
+    border: 1px solid black;
+}
+.manageDinnerIngredient{
+    font-weight: bold;
+    font-size: 20px;
+    background-color: #f5f5f5;
+}
+.manageDinnerBtn ul li a.active{
+    color:black;
+}
+/*.manageDinnerB1Scallion{
+    margin-bottom: 370px;
+}*/
+.manageDinnerGreen{
+    color: green;
+    font-family: "Times New Roman";
+    font-size: 18px;
+}
+.manageDinnerChili img{
+    width: 20px;
+    height: 25px;
+}
+.manageListNavbar{
+    font-family: Consolas;
+}
+.uploadPhotTalbe{
+    margin-left: 200px;
+}
+.setMenuLeft{
+    background-color: white;
+    width: 800px;
+
+}
+.setDinnerNameLeft{
+    background-color: white;
+    width: 800px;
+}
+.setMenuRight{
+    float: right;
+    position: fixed;
+    background-color: white;
+    margin-top: 100px;
+    margin-right: 100px;
+    width: 250px;
+    /*height: 300px;*/
+}
+.setFoodTypeLeftTable{
+    margin-left: 200px;
+}
+.setFoodTable{
+    margin-left: 150px;
+    margin-top:100px;
+}
+.setFoodTable td{
+    line-height: 200%;
+    font-size: 20px;
+    padding-left: 20px;
+}
+.setDescriptionLeftTable textarea{
+    width: 500px;
+    margin-top: 50px;
+    margin-left: 100px;
+}
+.setMenuTable{
+    width: 700px;
+    height: 400px;
+    margin-bottom: 30px;
+    margin-left: 50px;
+}
+.uploadPhotoLeftPhotos{
+    margin-left: 50px;
+}
+.setMenuRight img{
+    width:150px;
+    height: 200px;
+    text-align: center;
+}
+.setPriceTable{
+    width: 500px;
+    margin:20px 100px 30px 100px;   
+    font-size: 20px;
+}
+.setPriceFooterBack{
+    margin-left: 20px;
+}
+.manageListTable{
+    margin-left: 200px;
+}
+.reviewHelpNum{
+    color: #3300CC;
+    font-weight: bold;
+}
+.manageOrderTemp{
+    height: 800px;
+    background-color: white;
+}
+.manageOrderPicture img{
+    width: 600px;
+    height: 300px;
+}
+.manageOrderRight{
+    width: 601px;
+    position: relative;
+    border: 1px solid gray;
+    margin-right: 100px;
+    height: 700px;
+}
+.manageOrderHostPic img{
+    width: 150px;
+    height: 150px;
+    float: right;
+    margin-right: 80px;
+
+    /*float:right;*/
+    /*display: block;*/
+    /*margin-top: 300px;*/
+}
+/*.manageOrderHostPic{
+  float: right;
+  position: absolute;
+  z-index: 1;
+}*/
+.manageOrderBig{
+    font-size: 20px;
+}
+.manageOrderSmall{
+    font-size: 16px;
+}
+.manageOrderRule{
+    font-size: 18px;
+
+    font-weight: bold;
+    
+}
+.manageOrderLeft img{
+     width: 100px;
+    height: 100px;
+}
+.manageOrderLeft{
+    margin-left: 100px;
+    background-color: white;
+    height: 900px
+}
+.manageOrderLeftDetail{
+    margin-left: 100px;
+}
+.manageOrderDetail p{
+    margin-left: 50px;
+}
+.manageOrderLeftDetail input{
+    margin-top: 30px;
+    width: 300px;
+    height: 50px;
+}
+.manageOrderMargin{
+    margin-top: 30px;
+}
+.manageOrderLeftDetail textarea{
+    width: 400px;
+    height: 150px;
+}
+.manageOrderDetail img{
+    width:30px;
+    height: 30px;
+
+}
