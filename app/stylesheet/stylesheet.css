@@ -1092,7 +1092,7 @@ ul.nav_sign {
 }
 
 .space-2 {
-    margin-bottom: 12px;
+    margin-bottom: 32px;
 }
 
 
@@ -1923,14 +1923,12 @@ width:120px;
     height: 400px;
     border: 1px solid black;
     margin-bottom: 30px;
-    margin-left: 50px;
 }
 .uploadPhotoTemp, .setFoodTypeTemp,.setDescriptionTemp,.setDinnerNameTemp, .setDateTemp,.setPriceTemp, .setDiscountTemp, .setRulesTemp, .manageReservationTemp{
-    height: 1000px;
+    margin-left: 200px;
+    margin-right: 200px;
     width: 100%;
     font-family: Consolas;
-    background-color: #f5f5f5;
-
 }
 .uploadPhotLeftContent{
     margin-top: 180px;
@@ -1963,7 +1961,7 @@ width:120px;
 .uploadPhotoFile{
     margin-left: 330px;
     margin-top:-30px;
-     visibility:hidden;
+     /*visibility:hidden;*/
      z-index: 1;
 }
 .uploadePhotoRight{
@@ -2307,6 +2305,8 @@ width:120px;
 .dinnerMap_img {
     background: url(/app/images/pic/map.png) no-repeat;
     display: inline-block;
+    height: 756px;
+    width: 680px;
 }
 
 #setBasic_help_panel_title {
@@ -2327,209 +2327,627 @@ width:120px;
     background-color: green;
     box-shadow: 2px 2px black;
 }
-.manageDinnerTemp{
-    height: 1150px;
-    width: 100%;
-    font-family: Consolas;
-}
-.manageDinnerBody{
-    margin-left: 5%;
-    margin-right: 5%;
-}
-.manageDinnerPic img{
-    height: 300px;
-    width: 240px;
-    margin-left: 50px;
-    margin-top: 35px;
-}
-.manageDinnerBtn{
-    text-align: center;
-}
-.manageDinnerBtn ul li{
-    display: inline;
-    width: 110px;
-}
-.manageDinnerBtn ul li a{
-    border: 1px solid black;
-    width:110px;
-    box-shadow: 2px 2px gray;  
-    color: red;
-}
-.manageDinnerTitle{
 
-    font-weight: bold;
-    color: #ff5a5f;
-}
-.manageDinnerDetail{
-    margin-bottom: 50px;
-}
-.manageDinnerDescription{
-    font-size: 16px;
-}
-.manageDinnerHR{
-    border: 1px solid black;
-}
-.manageDinnerIngredient{
-    font-weight: bold;
-    font-size: 20px;
-    background-color: #f5f5f5;
-}
-.manageDinnerBtn ul li a.active{
+#setMenuBtnBack a {
     color:black;
 }
-/*.manageDinnerB1Scallion{
-    margin-bottom: 370px;
-}*/
-.manageDinnerGreen{
-    color: green;
-    font-family: "Times New Roman";
+
+.profile_container {
+    font-family: Consolas;
+    font-size: 14px;
+    line-height: 1.43;
+    color: #484848;
+    background-color: #f5f5f5;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    margin-left: auto;
+    margin-right: auto;
+    height: 2000px;
+}
+
+.profile_container_responsive {
+    width: 100%;
+    padding-left: 24px;
+    padding-right: 24px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.profile_space_top_4 {
+    margin-top: 24px;
+}
+
+.profile_space_4 {
+    margin-bottom: 24px;
+}
+
+.profile_row {
+    margin-left: -12px;
+    margin-right: -12px;
+}
+
+.profile_col_md_3 {
+    width: 25%;
+    float: left;
+    position: relative;
+    min-height: 1px;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.profile_sidenav_list {
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style: none;
+}
+
+.profile_sidenav ul {
+    margin-top: 0;
+    display: block;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 40px;
+}
+
+.profile_sidenav ul li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+
+.profile_sidenav_list a {
+    color: #ff5a5f;
+    text-decoration: none;
+    background: transparent;
+}
+
+.profile_sidenav_item {
+    display: block;
+    padding: 6px 0;
+    font-size: 16px;
+    color: #757575;
+}
+
+.profile_sidenav_item[aria-selected="true"] {
+    text-decoration: none;
+    color: #484848;
+    font-weight: bold;
+}
+
+.profile_sidenav_item[aria-selected="false"] {
+    color: #757575;
+}
+
+.profile_btn {
+    border-color: #c4c4c4;
+    background: white;
+    color: #484848;
+    padding: 7px 21px;
+    font-size: 14px;
+    margin-bottom: 0;
+    border-radius: 2px;
+    border: 1px solid;
+    text-align: center;
+    vertical-align: middle;
+    font-weight: bold;
+    line-height: 1.43;
+    cursor: pointer;
+}
+
+.profile_btn_block {
+    display: block;
+    white-space: normal;
+    width: 100%;
+}
+
+.profile_col_md_9 {
+    width: 75%;
+    float: left;
+    position: relative;
+    min-height: 1px;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+#profile_updateForm {
+    display: block;
+    margin-top: 0em;
+}
+
+.profile_panel {
+    border: 1px solid #dce0e0;
+    background-color: #fff;
+    border-radius: 0;
+}
+
+.profile_panel_header {
+    background-color: #edefed;
+    color: #484848;
+    font-size: 20px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #dce0e0;
+    position: relative;
+    margin: 0;
+    padding: 20px;
+}
+
+.profile_panel_header:first-child {
+    border-top: 0;
+}
+
+.profile_panel_header+.profile_panel_body {
+    border-top: none;
+}
+
+.profile_panel_body {
+    position: relative;
+    margin: 0;
+    padding: 20px;
+}
+
+.profile_panel_body>*:first-child {
+    margin-top: 0;
+}
+
+.profile_row_condensed {
+    margin-left: -6px;
+    margin-right: -6px;
+}
+
+.profile_row:before, .profile_row:after {
+    content: " ";
+    display: table;
+}
+
+.profile_row:after {
+    clear: both;
+}
+
+.profile_row_condensed .profile_col_sm_3, .profile_row_condensed .profile_col_sm_9 {
+    padding-left: 6px;
+    padding-right: 6px;
+}
+
+.profile_col_sm_3 {
+    width: 25%;
+    float: left;
+    position: relative;
+    min-height: 1px;
+}
+
+.profile_text_right {
+    text-align: right;
+}
+
+.profile_panel_body label {
+    display: block;
+    padding-top: 9px;
+    padding-bottom: 8px;
+    line-height: normal;
+    cursor: default;
+}
+
+.profile_col_sm_9 {
+    width: 75%;
+    float: left;
+    position: relative;
+    min-height: 1px;
+}
+
+.profile_input {
+    font-family: Consolas; 
+    line-height: normal;
+    font-size: inherit;
+    margin: 0;
+    -webkit-appearance: textfield;
+    -webkit-rtl-ordering: logical;
+    cursor: auto;
+    text-rendering: auto;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    text-align: start;
     font-size: 18px;
 }
-.manageDinnerChili img{
-    width: 20px;
-    height: 25px;
-}
-.manageListNavbar{
-    font-family: Consolas;
-}
-.uploadPhotTalbe{
-    margin-left: 200px;
-}
-.setMenuLeft{
-    background-color: white;
-    width: 800px;
 
+.profile_input[type="text"] {
+    display: block;
+    padding: 8px 10px;
+    width: 100%;
+    transition: border-color 0.2s;
+    border: 1px solid #c4c4c4;
+    border-radius: 2px;
+    background-color: #fff;
+    color: #484848;
 }
-.setDinnerNameLeft{
-    background-color: white;
-    width: 800px;
+
+.profile_text_muted {
+    color: #757575;
 }
-.setMenuRight{
-    float: right;
-    position: fixed;
-    background-color: white;
-    margin-top: 100px;
-    margin-right: 100px;
-    width: 250px;
-    /*height: 300px;*/
+
+.profile_space_top_1 {
+    margin-top: 6px;
 }
-.setFoodTypeLeftTable{
-    margin-left: 200px;
+
+.profile_icon {
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
 }
-.setFoodTable{
-    margin-left: 150px;
-    margin-top:100px;
+
+.icon_lock {
+    background: url(/app/images/icon/icon_lock.png) no-repeat;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 3px;
+    width: 30px;
+    height: 30px;
 }
-.setFoodTable td{
-    line-height: 200%;
-    font-size: 20px;
-    padding-left: 20px;
+
+.profile_select {
+    position: relative;
+    display: inline-block;
+    vertical-align: bottom;
+    /*width: 100%;*/
 }
-.setDescriptionLeftTable textarea{
-    width: 500px;
-    margin-top: 50px;
-    margin-left: 100px;
-}
-.setMenuTable{
-    width: 700px;
-    height: 400px;
-    margin-bottom: 30px;
-    margin-left: 50px;
-}
-.uploadPhotoLeftPhotos{
-    margin-left: 50px;
-}
-.setMenuRight img{
-    width:150px;
-    height: 200px;
+
+.profile_select:before {
+    position: absolute;
+    pointer-events: none;
+    color: #757575;
+    top: 0;
+    bottom: 1px;
+    padding-top: 0.7em;
+    line-height: 1;
+    right: 0;
+    width: 2em;
     text-align: center;
 }
-.setPriceTable{
-    width: 500px;
-    margin:20px 100px 30px 100px;   
+
+.profile_select select {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-right: 2em;
+    /*-webkit-appearance: none;*/
+}
+
+.profile_select select option {
+    font-weight: normal;
+    display: block;
+    white-space: pre;
+    min-height: 1.2em;
+    padding: 0px 2px 1px;
+}
+
+.profile_textarea {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    resize: vertical;
+    line-height: inherit;
+    display: block;
+    padding: 8px 10px;
+    width: 100%;
+    transition: border-color 0.2s;
+    font-family: Consolas;
+    border: 1px solid #c4c4c4;
+    border-radius: 2px;
+    background-color: #fff;
+    color: #484848;
+    overflow: auto;
+    -webkit-font-smoothing: antialiased;
+    font-size: inherit;
+    margin: 0;
+    -webkit-appearance: textarea;
+    -webkit-rtl-ordering: logical;
+    flex-direction: column;
+    cursor: auto;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    text-rendering: auto;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    text-align: start;
+}
+
+.profile_space_top_1 {
+    margin-top: 6px;
+}
+
+#emergency_contact_add {
+    color: #ff5a5f;
+    text-decoration: none;
+    background: transparent;
+}
+
+#user_shipping_address {
+    color: #ff5a5f;
+    text-decoration: none;
+    background: transparent;
+}
+
+.profile_btn_submit {
+    color: white;
+    background-color: green;
+    box-shadow: 2px 2px black;
+    padding: 9px 27px;
+    font-size: 24px;
+    width: 128px;
+    height: 48px;
+}
+
+#dinnerList_col_01 {
+    background: url(/app/images/pic/kidneyBean.jpg) no-repeat;
+    width: 400px;
+    height: 260px;
+}
+
+#dinnerList_col_02 {
+    background: url(/app/images/pic/celeryLily.png) no-repeat;
+    width: 400px;
+    height: 260px;
+}
+
+#dinnerList_col_03 {
+    background: url(/app/images/pic/RoastDuck.jpg) no-repeat;
+    width: 400px;
+    height: 260px;
+}
+
+#dinnerList_col_04 {
+    background: url(/app/images/pic/chickenClaw.jpg) no-repeat;
+    width: 400px;
+    height: 260px;
+}
+
+#dinnerList_col_05 {
+    background: url(/app/images/pic/SpringRolls.jpg) no-repeat;
+    width: 400px;
+    height: 260px;
+}
+
+#dinnerList_col_06 {
+    background: url(/app/images/pic/chickenCubes.jpg) no-repeat;
+    width: 400px;
+    height: 260px;
+}
+
+#dinnerList_a_01 {
+    color: #484848;
+    text-decoration: none;
+    background: transparent;
+}
+
+#dinnerList_a_02 {
+    color: #757575;
+    text-decoration: none;
+    background: transparent;
+}
+
+#dinnerList_span {
     font-size: 20px;
 }
-.setPriceFooterBack{
-    margin-left: 20px;
+
+.icon_business {
+    background: url(/app/images/icon/icon_business.png) no-repeat;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 3px;
+    width: 25px;
+    height: 25px;
 }
-.manageListTable{
-    margin-left: 200px;
+
+/*.review_star {
+    background: url(/app/images/pic/5star_clear.png) no-repeat;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 3px;
+    width: 25px;
+    height: 25px;
+}*/
+
+.profile_col_lg_12 {
+    width: 100%;
+    float: left;
+    position: relative;
+    min-height: 1px;
+    padding-left: 12px;
+    padding-right: 12px;
 }
-.reviewHelpNum{
-    color: #3300CC;
+
+.profile_col_lg_12 h1 {
+    font-size: 48px;
+}
+
+.profile_h5 {
+    font-size: 24px;
     font-weight: bold;
+    line-height: 1.1;
+    text-rendering: optimizelegibility;
 }
-.manageOrderTemp{
-    height: 800px;
-    background-color: white;
+
+.profile_space_top_2 {
+    margin-top: 12px;
 }
-.manageOrderPicture img{
-    width: 600px;
+
+#viewProfile_a01 {
+    color: #484848;
+    text-decoration: none;
+    background: transparent;
+}
+
+.icon_flag {
+    background: url(/app/images/icon/icon_flag.png) no-repeat;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 3px;
+    width: 25px;
+    height: 25px;
+}
+
+#viewProfile_a02 {
+    color: #757575;
+    text-decoration: none;
+    background: transparent;
+    font-size: 18px;
+}
+
+.profile_space_3 {
+    margin-bottom: 18px;
+}
+
+#viewProfile_a03 {
+    color: #ff5a5f;
+    text-decoration: none;
+    background: transparent;
+    font-size: 24px;
+}
+
+.profile_space_2 {
+    margin-bottom: 12px;
+}
+
+#viewProfile_media_container #viewProfile_slideshow {
+    transition: opacity 0.5s ease-in-out;
+}
+
+.viewProfile_slide {
+    position: relative;
+    height: 440px;
+}
+
+/*#viewProfile_slideshow_preload_01 {
+    background: url(/app/images/pic/host01.jpg) no-repeat;
+    display: inline-block;
+    vertical-align: middle;
+    width: 300px;
     height: 300px;
 }
-.manageOrderRight{
-    width: 601px;
-    position: relative;
-    border: 1px solid gray;
-    margin-right: 100px;
-    height: 700px;
-}
-.manageOrderHostPic img{
-    width: 150px;
-    height: 150px;
-    float: right;
-    margin-right: 80px;
 
-    /*float:right;*/
-    /*display: block;*/
-    /*margin-top: 300px;*/
+#viewProfile_slideshow_preload_02 {
+    background: url(/app/images/pic/host02.jpg) no-repeat;
+    display: inline-block;
+    vertical-align: middle;
+    width: 300px;
+    height: 300px;
 }
-/*.manageOrderHostPic{
-  float: right;
-  position: absolute;
-  z-index: 1;
+
+#viewProfile_slideshow_preload_03 {
+    background: url(/app/images/pic/host03.jpg) no-repeat;
+    display: inline-block;
+    vertical-align: middle;
+    width: 300px;
+    height: 300px;
 }*/
-.manageOrderBig{
+
+.viewProfile_slideshow_preload {
+    display: none;
+}
+
+.viewProfile_slideshow_images {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: block;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 40px;
+}
+
+.viewProfile_slideshow_images li.view_media_photo.active {
+    display: inherit;
+}
+
+.view_media_photo {
+    backface-visibility: hidden;
+    position: relative;
+    vertical-align: bottom;
+    overflow: hidden;
+    background-color: #bbb;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+}
+
+.view_media_photo_block{
+    display: block;
+}
+
+.view_img_responsive {
+    width: 100%;
+    height: auto;
+}
+
+.view_media_photo img {
+    vertical-align: middle;
+    border: 0;
+}
+
+.profile_panel_body dl {
+    margin-bottom: 15px;
+}
+
+.viewProfile_media:before {
+    content: " ";
+    display: table;
+}
+
+.viewProfile_media:after {
+    content: " ";
+    display: table;
+    clear: both;
+}
+
+.viewProfile_pull_left {
+    float: left;
+}
+
+.viewProfile_media>.viewProfile_pull_left {
+    margin-right: 15px;
+}
+
+.profile_icon.viewProfile_pull_left {
+    line-height: inherit;
+}
+
+.icon_ok {
+    background: url(/app/images/icon/icon_ok.png) no-repeat;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 3px;
+    width: 30px;
+    height: 30px;
+}
+
+.viewProfile_media_body {
+    padding-left: 5px;
+    display: table-cell;
+    width: 999999px;
+}
+
+.profile_h4 {
     font-size: 20px;
 }
-.manageOrderSmall{
-    font-size: 16px;
-}
-.manageOrderRule{
-    font-size: 18px;
 
-    font-weight: bold;
-    
+#add_verification {
+    color: #ff5a5f;
+    text-decoration: none;
+    background: transparent;
+    font-size: 20px;    
 }
-.manageOrderLeft img{
-     width: 100px;
-    height: 100px;
-}
-.manageOrderLeft{
-    margin-left: 100px;
-    background-color: white;
-    height: 900px
-}
-.manageOrderLeftDetail{
-    margin-left: 100px;
-}
-.manageOrderDetail p{
-    margin-left: 50px;
-}
-.manageOrderLeftDetail input{
-    margin-top: 30px;
-    width: 300px;
-    height: 50px;
-}
-.manageOrderMargin{
-    margin-top: 30px;
-}
-.manageOrderLeftDetail textarea{
-    width: 400px;
-    height: 150px;
-}
-.manageOrderDetail img{
-    width:30px;
-    height: 30px;
 
+.profile_panel_body dd {
+    font-size: 20px;
+}
+
+.viewProfile_slide img {
+    vertical-align: middle;
+    border: 0;
 }

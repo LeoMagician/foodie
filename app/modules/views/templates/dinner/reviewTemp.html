@@ -80,7 +80,7 @@
                                 <div class="col-sm-1"></div>
                                 <div class="col-sm-1"><p ng-model="reviewPersonName" ng-init="reviewPersonName='John'">{{reviewPersonName}}</p></div>
                                 <div class="col-sm-3"><span ng-model="reviewDate" ng-init="reviewDate='June,2016'" class="reviewDate">{{reviewDate}}</span></div>
-                                <div class="col-sm-7"><span class="glyphicon glyphicon-thumbs-up" ng-model="reviewHelpfulNumber1" ng-click="reviewHelpfulNumber1=reviewHelpfulNumber1 + 1" ng-init="reviewHelpfulNumber1=0">&nbsp; Helpful &nbsp; &nbsp;<span class="reviewHelpNum">{{reviewHelpfulNumber1}}</span></span></div><br>
+                                <div class="col-sm-7"><span class="glyphicon glyphicon-thumbs-up" ng-model="reviewHelpfulNumber1" ng-click="reviewHelpfulNumber1 = reviewHelpfulNumber1 + 1" ng-init="reviewHelpfulNumber1=0">&nbsp; Helpful &nbsp; &nbsp; {{reviewHelpfulNumber1}}</span></div><br>
                             </div>
                         </tr>
                         <tr></tr>
@@ -110,7 +110,7 @@
                                 <div class="col-sm-1"></div>
                                 <div class="col-sm-1"><p ng-model="reviewPersonName1" ng-init="reviewPersonName1='Paul'">{{reviewPersonName1}}</p></div>
                                 <div class="col-sm-3"><span ng-model="reviewDate1" ng-init="reviewDate1='July,2016'" class="reviewDate">{{reviewDate1}}</span></div>
-                                <div class="col-sm-7"><span class="glyphicon glyphicon-thumbs-up" id="reviewTumbUp" ng-model="reviewHelpfulNumber2" ng-click="reviewHelpfulNumber2 = reviewHelpfulNumber2 + 1" ng-init="reviewHelpfulNumber2=0">&nbsp; Helpful &nbsp; &nbsp; <span class="reviewHelpNum">{{reviewHelpfulNumber2}}</span></span></div><br>
+                                <div class="col-sm-7"><span class="glyphicon glyphicon-thumbs-up" id="reviewTumbUp" ng-model="reviewHelpfulNumber2" ng-click="reviewHelpfulNumber2 = reviewHelpfulNumber2 + 1" ng-init="reviewHelpfulNumber2=0">&nbsp; Helpful &nbsp; &nbsp; {{reviewHelpfulNumber2}}</span></div><br>
                             </div>
                         </tr>
                         <tr></tr>
