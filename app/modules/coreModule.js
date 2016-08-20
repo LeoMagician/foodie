@@ -90,6 +90,14 @@ define(function() {
                 .when('/manageReservation', {
                     controller: 'manageReservationController',
                     templateUrl: '/app/modules/views/manageListView/manageReservation.html'
+                })
+                .when('/editProfile', {
+                    controller: 'editProfileController',
+                    templateUrl: '/app/modules/views/manageListView/editProfile.html'
+                })
+                .when('/viewProfile', {
+                    controller: 'viewProfileController',
+                    templateUrl: '/app/modules/views/manageListView/viewProfile.html'
                 });
         }])
         .run(['$rootScope', function($rootScope) {

@@ -6,6 +6,8 @@ define(function() {
         'modules/controllers/dinnerListController',
         'modules/controllers/manageListController/manageListingController',
         'modules/controllers/manageListController/manageReservationController',
+        'modules/controllers/manageListController/editProfileController',
+        'modules/controllers/manageListController/viewProfileController',
         'modules/controllers/createDinner/createDinnerController',
         'modules/controllers/setBasicController/setAmenityController',
         'modules/controllers/setBasicController/setGuestNumController',
@@ -18,6 +20,6 @@ define(function() {
         'modules/controllers/setMenuController/setDescriptionController',
         'modules/controllers/setMenuController/setDinnerNameController',
         'modules/controllers/setMenuController/setFoodTypeController',
-        'modules/controllers/setMenuController/uploadPhotoController'
+        'modules/controllers/setMenuController/uploadPhotoController',       
     ]
 });

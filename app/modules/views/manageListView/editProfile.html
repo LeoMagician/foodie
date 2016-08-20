@@ -1,0 +1,280 @@
+<div class="profile_container">
+
+    <div class="manageListNavbar">
+        <nav class="navbar navbar-default">
+            <ul class="nav navbar-nav">
+                <li><a href="#/manageReservation">Your Listing</a></li>
+                <li class="active"><a href="#/editProfile">Profile</a></li>
+                <li><a href="#">Your Dinner</li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="profile_container_responsive profile_space_top_4 profile_space_4">
+        <div class="profile_row">
+            <div class="profile_col_md_3">
+                <div class="profile_sidenav">
+                    <ul class="profile_sidenav_list">
+                        <li><a href="#/profile" aria-selected="true" class="profile_sidenav_item">Edit Profile</a></li>
+                <li><a href="#" aria-selected="false" class="profile_sidenav_item">Photos, Symbol, and Video</a></li>
+                <li><a href="#" aria-selected="false" class="profile_sidenav_item">Trust and Verification</a></li>
+                <li><a href="#" aria-selected="false" class="profile_sidenav_item">Reviews</a></li>
+                <li><a href="#" aria-selected="false" class="profile_sidenav_item">References</a></li>
+            </ul>
+    </div>
+    <a href="#/viewProfile" class="profile_btn profile_btn_block profile_space_top_4">View Profile</a>
+</div>
+
+<div class="profile_col_md_9">
+    <div id="profile_content">
+        <form id="profile_updateForm">
+            <div class="profile_panel profile_space_4">
+                <div class="profile_panel_header">Required</div>
+                <div class="profile_panel_body">
+                    <div class="profile_row profile_row_condensed profile_space_4">
+                        <label class="profile_text_right profile_col_sm_3" for="user_firstName">First Name</label>
+                        <div class="profile_col_sm_9">
+                            <input class="profile_input" id="user_firstName" size="30" type="text" value="Leo">
+                        </div>
+                    </div>
+                    <div class="profile_row profile_row_condensed profile_space_4">
+                        <label class="profile_text_right profile_col_sm_3" for="user_lastName">Last Name</label>
+                        <div class="profile_col_sm_9">
+                            <input class="profile_input" id="user_lastName" size="30" type="text" value="Li">
+                            <div class="profile_text_muted profile_space_top_1">This is only shared once you have a confirmed booking with another Foodie user.</div>
+                        </div>
+                    </div>
+                    <div class="profile_row profile_row_condensed profile_space_4">
+                        <label class="profile_text_right profile_col_sm_3" for="user_sex">I Am
+                                        <i class="profile_icon icon_lock"></i>
+                                    </label>
+                        <div class="profile_col_sm_9">
+                            <div class="profile_select">
+                                <select id="user_sex">
+                                                <option value>Gender</option>
+                                                <option value="Male">Male</option>
+                                                <option value="Female">Female</option>
+                                                <option value="Other">Other</option>                                                
+                                            </select>
+                            </div>
+                            <div class="profile_text_muted profile_space_top_1">We use this data for analysis and never share it with other users.</div>
+                        </div>
+                    </div>
+                    <div class="profile_row profile_row_condensed profile_space_4">
+                        <label class="profile_text_right profile_col_sm_3" for="user_birthdate">Birth Date<i class="profile_icon icon_lock"></i></label>
+                        <div class="profile_col_sm_9">
+                            <div class="profile_select">
+                                <select id="user_birthdate_month">
+                                                <option value>Month</option>                                                
+                                                <option value="1">January</option><option value="2">February</option><option value="3">March</option><option value="4">April</option><option value="5">May</option><option value="6">June</option>
+                                                <option value="7">July</option><option value="8">August</option><option value="9">September</option><option value="10">October</option><option value="11">November</option><option value="12">December</option>                                               
+                                            </select>
+                            </div>
+                            <div class="profile_select">
+                                <select id="user_birthdate_date">
+                                                <option value>Date</option>                                                
+                                                <option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option>
+                                                <option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option>
+                                                <option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option>
+                                                <option value="16">16</option><option value="17">17</option><option value="18">18</option><option value="19">19</option><option value="20">20</option>                                                
+                                                <option value="21">21</option><option value="22">22</option><option value="23">23</option><option value="24">24</option><option value="25">25</option>                                                
+                                                <option value="26">26</option><option value="27">27</option><option value="28">28</option><option value="29">29</option><option value="30">30</option>                                                
+                                                <option value="31">31</option>                                                                                                        
+                                            </select>
+                            </div>
+                            <div class="profile_select">
+                                <select id="user_birthdate_year">
+                                                <option value>Year</option>
+                                                <option value="1980">1980</option><option value="1981">1981</option><option value="1982">1982</option><option value="1983">1983</option><option value="1984">1984</option>
+                                                <option value="1985">1985</option><option value="1986">1986</option><option value="1987">1987</option><option value="1988">1988</option><option value="1989">1989</option>
+                                                <option value="1990">1990</option><option value="1991">1991</option><option value="1992">1992</option><option value="1993">1993</option><option value="1994">1994</option>
+                                                <option value="1995">1995</option><option value="1996">1996</option><option value="1997">1997</option><option value="1998">1998</option><option value="1999">1999</option>
+                                                <option value="2000">2000</option><option value="2001">2001</option><option value="2002">2002</option><option value="2003">2003</option><option value="2004">2004</option>
+                                                <option value="2005">2005</option><option value="2006">2006</option><option value="2007">2007</option><option value="2008">2008</option><option value="2009">2009</option>
+                                            </select>
+                            </div>
+                            <div class="profile_text_muted profile_space_top_1">The magical day you were dropped from the sky by a stork. We use this data for analysis and never
+                                share it with other users.</div>
+                        </div>
+                    </div>
+                    <div class="profile_row profile_row_condensed profile_space_4">
+                        <label class="profile_text_right profile_col_sm_3" for="user_email">Email Address<i class="profile_icon icon_lock"></i></label>
+                        <div class="profile_col_sm_9">
+                            <input class="profile_input" id="user_email" size="30" type="text" value="leo.magician11@gmail.com">
+                            <div class="profile_text_muted profile_space_top_1">We won’t share your private email address with other Airbnb users.</div>
+                        </div>
+                    </div>
+                    <!--<div class="profile_row profile_row_condensed profile_space_4">
+                                    <label class="profile_text_right profile_col_sm_3" for="user_phone">Phone Number<i class="profile_icon icon_lock"></i></label>
+                                    <div class="profile_col_sm_9">                                       
+                                        <div class="profile_text_muted profile_space_top_1">This is only shared once you have a confirmed booking with another Airbnb user. This is how we can all get in touch.</div>
+                                    </div>
+                                </div>-->
+                    <div class="profile_row profile_row_condensed profile_space_4">
+                        <label class="profile_text_right profile_col_sm_3" for="user_preferred_language">Preferred Language</label>
+                        <div class="profile_col_sm_9">
+                            <div class="profile_select">
+                                <select id="user_preferred_language">
+                                                <option value="id">Bahasa Indonesia</option><option value="ms">Bahasa Melayu</option><option value="ca">Català</option>
+                                                <option value="da">Dansk</option><option value="de">Deutsch</option><option value="en" selected="selected">English</option>
+                                                <option value="es">Español</option><option value="el">Eλληνικά</option><option value="fr">Français</option>
+                                                <option value="it">Italiano</option><option value="hu">Magyar</option><option value="nl">Nederlands</option>
+                                                <option value="no">Norsk</option><option value="pl">Polski</option><option value="pt">Português</option>
+                                                <option value="fi">Suomi</option><option value="sv">Svenska</option><option value="tr">Türkçe</option>
+                                                <option value="is">Íslenska</option><option value="cs">Čeština</option><option value="ru">Русский</option>
+                                                <option value="th">ภาษาไทย</option><option value="zh">中文 (简体)</option><option value="zh-TW">中文 (繁體)</option>
+                                                <option value="ja">日本語</option><option value="ko">한국어</option>
+                                            </select>
+                            </div>
+                            <div class="profile_text_muted profile_space_top_1">We'll send you messages in this language.</div>
+                        </div>
+                    </div>
+                    <div class="profile_row profile_row_condensed profile_space_4">
+                        <label class="profile_text_right profile_col_sm_3" for="user_preferred_currency">Preferred Currency</label>
+                        <div class="profile_col_sm_9">
+                            <div class="profile_select">
+                                <select id="user_preferred_currency">
+                                                <option value="AED">AED</option><option value="ARS">ARS</option><option value="AUD">AUD</option><option value="BGN">BGN</option><option value="BRL">BRL</option>
+                                                <option value="CAD">CAD</option><option value="CHF">CHF</option><option value="CLP">CLP</option><option value="CNY">CNY</option><option value="COP">COP</option>
+                                                <option value="CRC">CRC</option><option value="CZK">CZK</option><option value="DKK">DKK</option><option value="EUR">EUR</option><option value="GBP">GBP</option>
+                                                <option value="HKD">HKD</option><option value="HRK">HRK</option><option value="HUF">HUF</option><option value="IDR">IDR</option><option value="ILS">ILS</option>
+                                                <option value="INR">INR</option><option value="JPY">JPY</option><option value="KRW">KRW</option><option value="MAD">MAD</option><option value="MXN">MXN</option>
+                                                <option value="MYR">MYR</option><option value="NOK">NOK</option><option value="NZD">NZD</option><option value="PEN">PEN</option><option value="PHP">PHP</option>
+                                                <option value="PLN">PLN</option><option value="RON">RON</option><option value="RUB">RUB</option><option value="SAR">SAR</option><option value="SEK">SEK</option>
+                                                <option value="SGD">SGD</option><option value="THB">THB</option><option value="TRY">TRY</option><option value="TWD">TWD</option><option value="UAH">UAH</option>
+                                                <option value="USD" selected="selected">USD</option><option value="UYU">UYU</option><option value="VND">VND</option><option value="ZAR">ZAR</option>
+                                            </select>
+                            </div>
+                            <div class="profile_text_muted profile_space_top_1">We’ll show you prices in this currency.</div>
+                        </div>
+                    </div>
+                    <div class="profile_row profile_row_condensed profile_space_4">
+                        <label class="profile_text_right profile_col_sm_3" for="user_address">Where You Live</label>
+                        <div class="profile_col_sm_9">
+                            <input class="profile_input" id="user_address" size="30" type="text" placeholder="Boston, Massachusetts, United States">
+                        </div>
+                    </div>
+                    <div class="profile_row profile_row_condensed profile_space_4">
+                        <label class="profile_text_right profile_col_sm_3" for="user_info_about">Describe Yourself</label>
+                        <div class="profile_col_sm_9">
+                            <textarea class="profile_textarea" cols="40" id="user_info_about" rows="5"></textarea>
+                            <div class="profile_text_muted profile_space_top_1">
+                                Foodie is built on relationships. Help other people get to know you.<br><br> Tell them about
+                                the things you like: What are 5 things you can’t live without? Share your favorite cuisine,
+                                Chinese, Italian, French, Japanese, Korean.<br><br> Tell them what it’s like to have you
+                                as a guest or host: What’s your style of tasting? Of Foodie hosting?<br><br> Tell them about
+                                you: Do you have a life motto?
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="profile_panel profile_space_4">
+                <div class="profile_panel_header">Optional</div>
+                <div class="profile_panel_body">
+                    <div class="profile_row profile_row_condensed profile_space_4">
+                        <label class="profile_text_right profile_col_sm_3" for="user_university">School</label>
+                        <div class="profile_col_sm_9">
+                            <input class="profile_input" id="user_university" size="30" type="text" value="Northeastern">
+                        </div>
+                    </div>
+                    <div class="profile_row profile_row_condensed profile_space_4">
+                        <label class="profile_text_right profile_col_sm_3" for="user_employer">Work</label>
+                        <div class="profile_col_sm_9">
+                            <input class="profile_input" id="user_employer" size="30" type="text" placeholder="e.g. Airbnb / Apple / Taco Stand"">
+                        </div>
+                    </div>
+                    <div class="profile_row profile_row_condensed profile_space_4">
+                        <label class="profile_text_right profile_col_sm_3" for="user_time_zone">Time Zone</label>
+                        <div class="profile_col_sm_9">
+                            <div class="profile_select">
+                                <select id="user_time_zone">
+                                    <option value=""></option>
+                                    <option value="International Date Line West">(GMT-11:00) International Date Line West</option><option value="Midway Island">(GMT-11:00) Midway Island</option>
+                                    <option value="Samoa">(GMT-11:00) Samoa</option><option value="Hawaii">(GMT-10:00) Hawaii</option><option value="Alaska">(GMT-09:00) Alaska</option>
+                                    <option value="Pacific Time (US &amp; Canada)">(GMT-08:00) Pacific Time (US &amp; Canada)</option><option value="Tijuana">(GMT-08:00) Tijuana</option>
+                                    <option value="Arizona">(GMT-07:00) Arizona</option><option value="Chihuahua">(GMT-07:00) Chihuahua</option><option value="Mazatlan">(GMT-07:00) Mazatlan</option>
+                                    <option value="Mountain Time (US &amp; Canada)">(GMT-07:00) Mountain Time (US &amp; Canada)</option><option value="America/Chicago">(GMT-06:00) America/Chicago</option>
+                                    <option value="Central America">(GMT-06:00) Central America</option><option value="Central Time (US &amp; Canada)">(GMT-06:00) Central Time (US &amp; Canada)</option>
+                                    <option value="Guadalajara">(GMT-06:00) Guadalajara</option><option value="Mexico City">(GMT-06:00) Mexico City</option><option value="Monterrey">(GMT-06:00) Monterrey</option>
+                                    <option value="Saskatchewan">(GMT-06:00) Saskatchewan</option><option value="America/New_York">(GMT-05:00) America/New_York</option><option value="Bogota">(GMT-05:00) Bogota</option>
+                                    <option value="Eastern Time (US &amp; Canada)" selected="selected">(GMT-05:00) Eastern Time (US &amp; Canada)</option>
+                                </select>
+                            </div>
+                            <div class="profile_text_muted profile_space_top_1">Your home time zone.</div>                              
+                        </div>
+                    </div>
+                    <div class="profile_row profile_row_condensed profile_space_4">
+                        <label class="profile_text_right profile_col_sm_3" for="user_emergency_contact">Emergency Contact<i class="profile_icon icon_lock"></i></label>
+                        <div class="profile_col_sm_9">
+                            <div class="profile_space_top_1">
+                                <a id="emergency_contact_add" class="emergency_contact_trigger" href="#">Add Contact</a>
+                            </div>
+                            <div class="profile_text_muted profile_space_top_1">Give our Customer Experience team a trusted contact we can alert in an urgent situation.</div> 
+                        </div>
+                    </div>
+                    <!--<div id="emergency_contact_popout" style="none">
+                        <div class="profile_row profile_row_condensed profile_space_4">
+                            <label class="profile_text_right profile_col_sm_3" for="user_emergency_contact_name">Name</label>
+                            <div class="profile_col_sm_9">
+                                <input class="profile_input" id="user_emergency_contact_name" size="30" type="text">
+                            </div>
+                        </div>
+                        <div class="profile_row profile_row_condensed profile_space_4">
+                            <label class="profile_text_right profile_col_sm_3" for="user_emergency_contact_phone">Phone</label>
+                            <div class="profile_col_sm_9">
+                                <input class="profile_input" id="user_emergency_contact_phone" size="30" type="text">
+                            </div>
+                        </div>
+                        <div class="profile_row profile_row_condensed profile_space_4">
+                            <label class="profile_text_right profile_col_sm_3" for="user_emergency_contact_address">Address</label>
+                            <div class="profile_col_sm_9">
+                                <input class="profile_input" id="user_emergency_contact_address" size="30" type="text">
+                            </div>
+                        </div>
+                        <div class="profile_row profile_row_condensed profile_space_4">
+                            <label class="profile_text_right profile_col_sm_3" for="user_emergency_contact_email">Email</label>
+                            <div class="profile_col_sm_9">
+                                <input class="profile_input" id="user_emergency_contact_email" size="30" type="text">
+                            </div>
+                        </div>
+                        <div class="profile_row profile_row_condensed profile_space_4">
+                            <label class="profile_text_right profile_col_sm_3" for="user_emergency_contact_relationship">Relationship</label>
+                            <div class="profile_col_sm_9">
+                                <input class="profile_input" id="user_emergency_contact_relationship" size="30" type="text">
+                            </div>
+                        </div>
+                    </div>-->
+                    <div class="profile_row profile_row_condensed profile_space_4">
+                        <label class="profile_text_right profile_col_sm_3" for="user_shipping_address">Shipping Address<i class="profile_icon icon_lock"></i></label>
+                        <div class="profile_col_sm_9">
+                            <div class="profile_space_top_1">
+                                <a id="user_shipping_address" class="emergency_contact_trigger" href="#">Add Shipping Address</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="profile_panel profile_space_4">
+                <div class="profile_panel_header">Business Dinner</div>
+                <div class="profile_panel_body">
+                    <div class="profile_row profile_row_condensed profile_space_4">
+                        <label class="profile_text_right profile_col_sm_3" for="user_work_email">Work Email Address<i class="profile_icon icon_lock"></i></label>
+                        <div class="profile_col_sm_9">
+                            <input class="profile_input" id="user_work_email" size="30" type="text">
+                            <div class="profile_text_muted profile_space_top_1">Add your work email address and get a $50 credit after taking your first Foodie business dinner.</div>                                                          
+                        </div>
+                    </div>
+                </div>
+            </div>  
+                
+            <button type="submit" class="profile_btn_submit">Save</button>
+        </form>
+    </div>
+</div>
+</div>
+</div>
+</div>
