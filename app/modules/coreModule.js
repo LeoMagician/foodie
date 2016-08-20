@@ -8,9 +8,9 @@ define(function() {
                     controller: 'homeController',
                     templateUrl: '/app/modules/views/home.html'
                 })
-                .when('/login', {
-                    controller: 'loginController'
-                })
+                // .when('/login', {
+                //     controller: 'loginController'
+                // })
                 .when('/dinner', {
                     controller: 'dinnerController',
                     templateUrl: '/app/modules/views/dinner.html'
@@ -92,17 +92,23 @@ define(function() {
                     templateUrl: '/app/modules/views/manageListView/manageReservation.html'
                 });
         }])
-        .run(['$rootScope', function($rootScope) {
+        .run(['$rootScope', function($http, $window, $rootScope) {
+            // add JWT token as default auth header
+            $http.defaults.headers.common['Authorization'] = 'Bearer ' + $window.jwtToken;
             $rootScope.dinnerListUrl = "http://localhost:3000/#/dinnerList";
             $rootScope.$on('$locationChangeSuccess', function(event, url, oldUrl, state, oldState) {
                 $rootScope.surl = url;
             });
         }]);
 
-    require(['modules/moduleReference'], function(references) {
-        require(references, function() {
-            angular.bootstrap(document, ['coreModule']);
+    $(function() {
+        require(['modules/moduleReference'], function(references) {
+            require(references, function() {
+                $.get('/app/token', function (token) {
+                    window.jwtToken = token;
+                    angular.bootstrap(document, ['coreModule']);
+                });
+            });
         });
-    });
-
+    })
 });

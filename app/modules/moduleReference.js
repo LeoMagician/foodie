@@ -19,5 +19,6 @@ define(function() {
         'modules/controllers/setMenuController/setDinnerNameController',
         'modules/controllers/setMenuController/setFoodTypeController',
         'modules/controllers/setMenuController/uploadPhotoController'
+        // 'modules/controllers/loginController'
     ]
 });

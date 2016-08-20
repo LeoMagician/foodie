@@ -13,7 +13,7 @@ define(function() {
             //     console.log('markers', map.markers);
             //     console.log('shapes', map.shapes);
             // });
-
+            debugger;
         })
         .directive("dinnerFilter", function() {
             return {

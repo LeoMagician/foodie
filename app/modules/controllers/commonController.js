@@ -1,51 +1,28 @@
-define(function() {
+define(['modules/services/user.service',
+        'modules/services/flash.service',
+        'modules/services/userInfo.service',
+        'modules/controllers/userController/loginController',
+        'modules/controllers/userController/registerController'], 
+        function(UserService, FlashService, UserInfoService) {
+    
     var coreModule = angular.module('coreModule');
-
-    coreModule.controller('commonController', ['$scope', '$routeParams', '$location', '$route', '$uibModal', '$log', function($scope, $routeParams, $location, $route, $uibModal, $log) {
-            $scope.test = 'test';
-            $scope.items = ['item1', 'item2', 'item3'];
-            $scope.animationsEnabled = false;
+    coreModule.controller('commonController', ['$scope', '$location', '$route', '$uibModal', '$http', function($scope, $location, $route, $uibModal, $http) {
+            $scope.userObj = UserInfoService.getUserInfo();
             $scope.bottom = 'vabar-fixed-bottom';
             $scope.open = function(size) {
                 var modalInstance = $uibModal.open({
-                    animation: $scope.animationsEnabled,
                     templateUrl: '/app/modules/views/templates/loginTemp.html',
-                    controller: 'ModalInstanceCtrl',
-                    size: size,
-                    resolve: {
-                        items: function() {
-                            return $scope.items;
-                        }
-                    }
+                    controller: 'loginController'              
                 });
 
-                modalInstance.result.then(function(selectedItem) {
-                    $scope.selected = selectedItem;
-                }, function() {
-                    $log.info('Modal dismissed at: ' + new Date());
-                });
             };
 
             $scope.signUp = function(size) {
-
                 var modalInstance = $uibModal.open({
-                    animation: $scope.animationsEnabled,
                     templateUrl: '/app/modules/views/templates/signupTemp.html',
-                    controller: 'ModalInstanceCtrl',
-                    size: size,
-                    resolve: {
-                        items: function() {
-                            return $scope.items;
-
-                        }
-                    }
+                    controller: 'signUpController'
                 });
             }
-            $scope.toggleAnimation = function() {
-                $scope.animationsEnabled = !$scope.animationsEnabled;
-            };
-
-
         }])
         .directive("headerTemp", function() {
             return {
@@ -59,33 +36,6 @@ define(function() {
                 restrict: 'AC',
                 templateUrl: '/app/modules/views/templates/footerTemp.html',
                 replace: true
-                    // scope: {
-                    //     fixBottom: "="
-                    // },
-                    // link: function(scope, elements, atrrs) {
-                    //      scope.url = $location.path();
-                    //      if (scope.url === '/createDinner') {
-                    //         scope.fixBottom="vabar-fixed-bottom";
-                    //      } else {
-                    //         scope.fixBottom ='';
-                    //      }
-                    // }
             }
         });
-
-    coreModule.controller('ModalInstanceCtrl', function($scope, $uibModalInstance, items) {
-
-        $scope.items = items;
-        $scope.selected = {
-            item: $scope.items[0]
-        };
-
-        $scope.ok = function() {
-            $uibModalInstance.close($scope.selected.item);
-        };
-
-        $scope.cancel = function() {
-            $uibModalInstance.dismiss('cancel');
-        };
-    });
 });
