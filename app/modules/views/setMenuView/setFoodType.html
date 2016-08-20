@@ -1,20 +1,22 @@
-<div class="setMenuNavbar">
-<nav class="navbar navbar-default">
-    <ul class="nav navbar-nav">
-      <li><a href="#/uploadPhoto">Photo</a></li>
-      <li class="active"><a href="#/setFoodType">Food Type</a></li>
-      <li><a href="#/setDescription">Description</a></li> 
-      <li><a href="#/setDinnerName">Dinner Name</a></li> 
-    </ul>
-</nav>
-</div>
+
 <div class="setFoodTypeTemp">
-    <table>
-        <tr>
-            <td>
-                <div class="setFoodTypeLeft">
-                    <h1 class="setFoodTypeLeftWhat">What kind of food can you make?</h1>
-                    <div class="setFoodTypeLeftTable">
+    <div class="setMenuNavbar">
+        <nav class="navbar navbar-default">
+            <ul class="nav navbar-nav">
+                <li><a href="#/uploadPhoto">Photo</a></li>
+                <li class="active"><a href="#/setFoodType">Food Type</a></li>
+                <li><a href="#/setDescription">Description</a></li>
+                <li><a href="#/setDinnerName">Dinner Name</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="uploadPhotTalbe">
+        <div class="col-sm-8">
+            <div class="setMenuLeft">
+                <h1 class="uploadPhotoLeftPhotos">What kind of food can you make?</h1>
+                <div class="setMenuTable">
+                    <div class="setFoodTable">
                         <form>
                             <table>
                                 <tr>
@@ -40,18 +42,22 @@
                             </table>
                         </form>
                     </div>
-                    <hr class="setFoodTypeHr">
-                    <div class="setFoodTypeFooter">
-                        <span class="setFoodTypeFooterBack" id="setMenuBtnBack"><a href="#/uploadPhoto">Back</a> </span>
-                        <span class="setFoodTypeFooterBtn"><a href="#/setDescription" class="btn btn-success" role="button">Next</a></span>
-                    </div>
                 </div>
-            </td>
-            <td>
-                <div class="setFoodTypeRight">
-                    <img src="images/pic/host01.jpg">
+                <hr>
+                <div class="uploadPhotoFooter">
+                    <span class="setFoodTypeFooterBack"><a href="#/uploadPhoto">< Back</a> </span>
+                <span class="setFoodTypeFooterBtn"><a href="#/setDescription" class="btn btn-success" role="button">Next</a></span>
                 </div>
-            </td>
-        </tr>
-    </table>
+            </div>
+        </div>
+
+        <div class="col-sm-4">
+            <div class="setMenuRight">
+                <div class="setLocation_help_panel-bulb_img"></div>
+                <p>What  is your favorite food type? And which food type are you good at?</p>
+                <img src="images/pic/noodle.jpg">
+            </div>
+        </div>
+
+    </div>
 </div>
