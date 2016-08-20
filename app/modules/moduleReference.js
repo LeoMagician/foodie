@@ -23,6 +23,8 @@ define(function() {
         'modules/controllers/manageListController/manageDinner2Controller',
         'modules/controllers/manageListController/manageDinnerLastController',
         'modules/controllers/manageListController/manageOrderController',
+        'modules/controllers/manageListController/viewProfileController',
+        'modules/controllers/manageListController/editProfileController',
       
     ]
 });

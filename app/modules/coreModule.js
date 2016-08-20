@@ -107,6 +107,14 @@ define(function() {
                     controller: 'manageOrderController',
                     templateUrl: '/app/modules/views/manageListView/manageOrder.html'
                 })
+                .when('/editProfile', {
+                    controller: 'editProfileController',
+                    templateUrl: '/app/modules/views/manageListView/editProfile.html'
+                })
+                .when('/viewProfile', {
+                    controller: 'viewProfileController',
+                    templateUrl: '/app/modules/views/manageListView/viewProfile.html'
+                })
 
         }])
         .run(['$rootScope', function($rootScope) {
