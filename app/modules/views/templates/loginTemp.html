@@ -1,41 +1,41 @@
 <script type="text/ng-template" id="/app/modules/views/templates/loginTemp.html">
-<html>
-    <head>
+    <!--<html>
+    <head>-->
     <div class="modal-header loginfont" align="center">
         <h3 class="modal-title">Welcome to foodie family!</h3>
     </div>
-    </head>
+    <!--</head>-->
 
-    <body>
+    <!--<body>-->
     <div class="modal-body loginfont">
         <div class="container">
-            <form>
+            <form method="post" ng-submit="submit()">
                 <div class="form-group">
-                    <input type="email" class="control-group" id="email" name="email" placeholder="Email Address" required style="width:500px;">
+                    <input type="email" class="control-group" id="email" ng-model="email" name="email" placeholder="Email Address" required style="width:500px;">
                     <span><img src="images/icon/mail.png"></span>
                 </div>
                 <div class="form-group">
-                    <input type="password" class="control-group" id="password" name="password" placeholder="Password" required style="width:500px;">
+                    <input type="password" class="control-group" id="password" ng-model="password" name="password" placeholder="Password" required style="width:500px;">
                     <span><img src="images/icon/key.png"></span>
                 </div>
+                <div ng-class="{ 'alert-danger': flash.type === 'error' }" ng-if="flash" ng-bind="flash.message"></div>
                 <div class="form-group">
                     <input type="checkbox" class="control-group logincheck" name="remember" value="remember">Remember me
                     <span class="loginbodyspan"><a href="#/forgotPassword">Forgot password?</a></span>
                 </div>
 
-                <button type="submit" class="btnloginlogin">Log In</button>
-
-                
+                <button class="btnloginlogin" ng-click="submit()">Log In</button>
             </form>
+            <span>{{error}}</span>
         </div>
     </div>
 
     <div class="modal-footer loginfont">
         <span class="loginfooterspan">Don't have an account?</span>
-        <button type="submit" class="btnloginsignup">Sign Up</button>
+        <button class="btnloginsignup" ng-click="signUp2()">Sign Up</button>
     </div>
 
-    </body>
+    <!--</body>-->
 
-</html>
+    <!--</html>-->
 </script>

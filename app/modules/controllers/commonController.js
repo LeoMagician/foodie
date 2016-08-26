@@ -1,91 +1,46 @@
-define(function() {
-    var coreModule = angular.module('coreModule');
+define(['modules/services/authenticationService',
+        'modules/services/flash.service',
+        'modules/services/userInfo.service',
+        'modules/controllers/userController/loginController',
+        'modules/controllers/userController/registerController'
+    ],
+    function(AuthenticationService, FlashService, UserInfoService, UserService) {
 
-    coreModule.controller('commonController', ['$scope', '$routeParams', '$location', '$route', '$uibModal', '$log', function($scope, $routeParams, $location, $route, $uibModal, $log) {
-            $scope.test = 'test';
-            $scope.items = ['item1', 'item2', 'item3'];
-            $scope.animationsEnabled = false;
-            $scope.bottom = 'vabar-fixed-bottom';
-            $scope.open = function(size) {
-                var modalInstance = $uibModal.open({
-                    animation: $scope.animationsEnabled,
-                    templateUrl: '/app/modules/views/templates/loginTemp.html',
-                    controller: 'ModalInstanceCtrl',
-                    size: size,
-                    resolve: {
-                        items: function() {
-                            return $scope.items;
-                        }
-                    }
-                });
+        var coreModule = angular.module('coreModule');
+        coreModule.controller('commonController', function($scope, $location, $route, $uibModal, $http, UserInfoService, AuthenticationService) {
+                $scope.userObj = UserInfoService.getUserInfo();
+                $scope.bottom = 'vabar-fixed-bottom';
+                $scope.open = function(size) {
+                    var modalInstance = $uibModal.open({
+                        templateUrl: '/app/modules/views/templates/loginTemp.html',
+                        controller: 'loginController'
+                    });
 
-                modalInstance.result.then(function(selectedItem) {
-                    $scope.selected = selectedItem;
-                }, function() {
-                    $log.info('Modal dismissed at: ' + new Date());
-                });
-            };
+                };
 
-            $scope.signUp = function(size) {
+                $scope.signUp = function(size) {
+                    var modalInstance = $uibModal.open({
+                        templateUrl: '/app/modules/views/templates/signupTemp.html',
+                        controller: 'signUpController'
+                    });
+                }
 
-                var modalInstance = $uibModal.open({
-                    animation: $scope.animationsEnabled,
-                    templateUrl: '/app/modules/views/templates/signupTemp.html',
-                    controller: 'ModalInstanceCtrl',
-                    size: size,
-                    resolve: {
-                        items: function() {
-                            return $scope.items;
-
-                        }
-                    }
-                });
-            }
-            $scope.toggleAnimation = function() {
-                $scope.animationsEnabled = !$scope.animationsEnabled;
-            };
-
-
-        }])
-        .directive("headerTemp", function() {
-            return {
-                restrict: 'AC',
-                templateUrl: '/app/modules/views/templates/headerTemp.html',
-                replace: true
-            }
-        })
-        .directive("footerTemp", function($location) {
-            return {
-                restrict: 'AC',
-                templateUrl: '/app/modules/views/templates/footerTemp.html',
-                replace: true
-                    // scope: {
-                    //     fixBottom: "="
-                    // },
-                    // link: function(scope, elements, atrrs) {
-                    //      scope.url = $location.path();
-                    //      if (scope.url === '/createDinner') {
-                    //         scope.fixBottom="vabar-fixed-bottom";
-                    //      } else {
-                    //         scope.fixBottom ='';
-                    //      }
-                    // }
-            }
-        });
-
-    coreModule.controller('ModalInstanceCtrl', function($scope, $uibModalInstance, items) {
-
-        $scope.items = items;
-        $scope.selected = {
-            item: $scope.items[0]
-        };
-
-        $scope.ok = function() {
-            $uibModalInstance.close($scope.selected.item);
-        };
-
-        $scope.cancel = function() {
-            $uibModalInstance.dismiss('cancel');
-        };
+                $scope.logout = function() {
+                    AuthenticationService.ClearCredentials();
+                }
+            })
+            .directive("headerTemp", function() {
+                return {
+                    restrict: 'AC',
+                    templateUrl: '/app/modules/views/templates/headerTemp.html',
+                    replace: true
+                }
+            })
+            .directive("footerTemp", function($location) {
+                return {
+                    restrict: 'AC',
+                    templateUrl: '/app/modules/views/templates/footerTemp.html',
+                    replace: true
+                }
+            });
     });
-});

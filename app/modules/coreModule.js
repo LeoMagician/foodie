@@ -1,5 +1,5 @@
 define(function() {
-    var coreModule = angular.module('coreModule', ['ngRoute', 'ui.bootstrap']);
+    var coreModule = angular.module('coreModule', ['ngRoute', 'ui.bootstrap', 'ngCookies']);
 
     coreModule.config(['$routeProvider', function($routeProvider) {
             $routeProvider
@@ -7,9 +7,6 @@ define(function() {
                 .when('/', {
                     controller: 'homeController',
                     templateUrl: '/app/modules/views/home.html'
-                })
-                .when('/login', {
-                    controller: 'loginController'
                 })
                 .when('/dinner', {
                     controller: 'dinnerController',
@@ -117,17 +114,25 @@ define(function() {
                 })
 
         }])
-        .run(['$rootScope', function($rootScope) {
+        .run(function($http, $window, $rootScope, $cookieStore, $location) {
+            // keep user logged in after page refresh
+            $rootScope.globals = $cookieStore.get('globals') || {};
+            if ($rootScope.globals.currentUser) {
+                $http.defaults.headers.common['Authorization'] = 'Basic ' + $rootScope.globals.currentUser.authdata;
+            } else {
+                $location.path('/');
+                // angular.element('#angularClick').triggerHandler('click');
+            }
+
             $rootScope.dinnerListUrl = "http://localhost:3000/#/dinnerList";
             $rootScope.$on('$locationChangeSuccess', function(event, url, oldUrl, state, oldState) {
                 $rootScope.surl = url;
             });
-        }]);
+        });
 
     require(['modules/moduleReference'], function(references) {
         require(references, function() {
             angular.bootstrap(document, ['coreModule']);
         });
     });
-
 });
