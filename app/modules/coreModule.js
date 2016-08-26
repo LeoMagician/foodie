@@ -87,7 +87,32 @@ define(function() {
                 .when('/manageReservation', {
                     controller: 'manageReservationController',
                     templateUrl: '/app/modules/views/manageListView/manageReservation.html'
-                });
+                })
+                .when('/manageDinner1', {
+                    controller: 'manageDinner1Controller',
+                    templateUrl: '/app/modules/views/manageListView/manageDinner1.html'
+                })
+                .when('/manageDinner2', {
+                    controller: 'manageDinner2Controller',
+                    templateUrl: '/app/modules/views/manageListView/manageDinner2.html'
+                })
+                .when('/manageDinnerLast', {
+                    controller: 'manageDinnerLastController',
+                    templateUrl: '/app/modules/views/manageListView/manageDinnerLast.html'
+                })
+                .when('/manageOrder', {
+                    controller: 'manageOrderController',
+                    templateUrl: '/app/modules/views/manageListView/manageOrder.html'
+                })
+                .when('/editProfile', {
+                    controller: 'editProfileController',
+                    templateUrl: '/app/modules/views/manageListView/editProfile.html'
+                })
+                .when('/viewProfile', {
+                    controller: 'viewProfileController',
+                    templateUrl: '/app/modules/views/manageListView/viewProfile.html'
+                })
+
         }])
         .run(function($http, $window, $rootScope, $cookieStore, $location) {
             // keep user logged in after page refresh

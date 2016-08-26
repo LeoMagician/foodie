@@ -18,7 +18,13 @@ define(function() {
         'modules/controllers/setMenuController/setDescriptionController',
         'modules/controllers/setMenuController/setDinnerNameController',
         'modules/controllers/setMenuController/setFoodTypeController',
-        'modules/controllers/setMenuController/uploadPhotoController'
-        // 'modules/controllers/loginController'
+        'modules/controllers/setMenuController/uploadPhotoController',
+        'modules/controllers/manageListController/manageDinner1Controller',
+        'modules/controllers/manageListController/manageDinner2Controller',
+        'modules/controllers/manageListController/manageDinnerLastController',
+        'modules/controllers/manageListController/manageOrderController',
+        'modules/controllers/manageListController/viewProfileController',
+        'modules/controllers/manageListController/editProfileController'
+
     ]
 });
