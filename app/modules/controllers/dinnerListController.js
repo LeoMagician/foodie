@@ -6,14 +6,14 @@ define(function() {
             // $scope.dinnerList = "dinner list section"
             // $scope.filter = "dinner filter section";;
             // $scope.pagination = "dinner pagination section";
-            
+
             // $scope.map = "dinner map section";
             // NgMap.getMap().then(function(map) {
             //     console.log(map.getCenter());
             //     console.log('markers', map.markers);
             //     console.log('shapes', map.shapes);
             // });
-            debugger;
+
         })
         .directive("dinnerFilter", function() {
             return {
@@ -43,7 +43,7 @@ define(function() {
                 replace: false
             }
         })
-// New_Jianing
+        // New_Jianing
         .directive("dinnerListSide", function() {
             return {
                 restrict: 'AC',

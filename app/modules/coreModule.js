@@ -1,5 +1,5 @@
 define(function() {
-    var coreModule = angular.module('coreModule', ['ngRoute', 'ui.bootstrap']);
+    var coreModule = angular.module('coreModule', ['ngRoute', 'ui.bootstrap', 'ngCookies']);
 
     coreModule.config(['$routeProvider', function($routeProvider) {
             $routeProvider
@@ -8,9 +8,6 @@ define(function() {
                     controller: 'homeController',
                     templateUrl: '/app/modules/views/home.html'
                 })
-                // .when('/login', {
-                //     controller: 'loginController'
-                // })
                 .when('/dinner', {
                     controller: 'dinnerController',
                     templateUrl: '/app/modules/views/dinner.html'
@@ -92,23 +89,25 @@ define(function() {
                     templateUrl: '/app/modules/views/manageListView/manageReservation.html'
                 });
         }])
-        .run(['$http', '$window','$rootScope',  function($http, $window, $rootScope) {
-            // add JWT token as default auth header
-            $http.defaults.headers.common['Authorization'] = 'Bearer ' + $window.jwtToken;
+        .run(function($http, $window, $rootScope, $cookieStore, $location) {
+            // keep user logged in after page refresh
+            $rootScope.globals = $cookieStore.get('globals') || {};
+            if ($rootScope.globals.currentUser) {
+                $http.defaults.headers.common['Authorization'] = 'Basic ' + $rootScope.globals.currentUser.authdata;
+            } else {
+                $location.path('/');
+                // angular.element('#angularClick').triggerHandler('click');
+            }
+
             $rootScope.dinnerListUrl = "http://localhost:3000/#/dinnerList";
             $rootScope.$on('$locationChangeSuccess', function(event, url, oldUrl, state, oldState) {
                 $rootScope.surl = url;
             });
-        }]);
-
-    // $(function() {
-        require(['modules/moduleReference'], function(references) {
-            require(references, function() {
-                // $.get('/app/token', function (token) {
-                    // window.jwtToken = token;
-                    angular.bootstrap(document, ['coreModule']);
-                // });
-            });
         });
-    // })
+
+    require(['modules/moduleReference'], function(references) {
+        require(references, function() {
+            angular.bootstrap(document, ['coreModule']);
+        });
+    });
 });

@@ -12,9 +12,9 @@ To get up and running you need to install several softwares and their dependenci
 
 ## software stack
 
-Front-end uses Backbone.js, Require.js and twitter bootstrap;
-Back-end uses Node.js, Bookshelf and Express;
-Database: MySQL.
+Front-end uses angular.js, Require.js and twitter bootstrap;
+Back-end uses Node.js, mongoose and Express;
+Database: MongoDB.  
 
 ## Dependencies
 Front-end: underscore.js, Jquery, JSRender/JSView and moment.js;

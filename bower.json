@@ -21,6 +21,8 @@
     "angular-route": "^1.5.8",
     "jquery": "^3.1.0",
     "bootstrap": "^3.3.7",
-    "angular-bootstrap": "^2.0.1"
+    "angular-bootstrap": "^2.0.1",
+    "angular-cookies": "^1.5.8",
+    "js-base64": "^2.1.9"
   }
 }

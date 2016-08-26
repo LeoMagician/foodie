@@ -8,7 +8,7 @@ var config = require('./config/config.json')
 var port = process.env.PORT || 3000;
 
 //load all of the static files
-app.set('views', __dirname + '/views');
+// app.set('views', __dirname + '/views');
 app.set('view engine', 'jade');
 app.use('/app', express.static(__dirname + '/app'));
 app.use('/bower_components', express.static(__dirname + '/bower_components'));
@@ -19,15 +19,16 @@ app.use(bodyParser.json());
 app.use(session({ secret: config.secret, resave: false, saveUninitialized: false }));
 
 // use JWT auth to secure the api
-// app.use('/api', expressJwt({ secret: config.secret }).unless({ path: ['/api/users/authenticate', '/api/users/register'] }));
+app.use('/api', expressJwt({ secret: config.secret }).unless({ path: ['/api/users/authenticate', '/api/users/register'] }));
 
 //routes
-// app.use('/login', require('./server/controllers/login.register.controller/login.controller'));
+
+app.post('/login', require('./server/controllers/login.register.controller/login.controller'));
 // app.use('/register', require('./server/controllers/login.register.controller/register.controller'));
 // app.use('/app', require('./server/controllers/login.register.controller/app.controller'));
-// app.use('/api/users', require('./server/controllers/api/user.controller'));
+app.use('/api/users', require('./server/controllers/api/user.controller'));
 
-app.get('/', function (req, res) {
+app.get('/', function(req, res) {
     res.sendFile('/app/index.html');
 });
 
