@@ -24,19 +24,26 @@ Back-end: Mysql, knex, body-parser.
 
 A step by step series of examples that tell you have to get a development env running
 
-Stay what the step will be
+Download node.js and npm
 
 ```
-Give the example
+Download latesd LTS version through https://nodejs.org/en/download/.
 ```
 
-And repeat
+Download bower
 
 ```
-until finished
+$ npm install -g bower
 ```
+Download all of the dependencies managed by npm and bower
 
-End with an example of getting some data out of the system or using it for a little demo
+```
+$ npm install
+$ bower install
+```
+Download Visual studio code as the IDE, cause it support node.js perfectly. 
+Once you download it, you can simply run the project under the debug model. 
+
 
 # Define API entry points
 
