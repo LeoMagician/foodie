@@ -1,0 +1,27 @@
+{
+  "name": "js-base64",
+  "version": "2.1.9",
+  "main": [
+    "./base64.js"
+  ],
+  "ignore": [
+    "old",
+    "test",
+    ".gitignore",
+    ".travis.yml",
+    "base64.html",
+    "package.json"
+  ],
+  "dependencies": {},
+  "homepage": "https://github.com/dankogai/js-base64",
+  "_release": "2.1.9",
+  "_resolution": {
+    "type": "version",
+    "tag": "2.1.9",
+    "commit": "9192c510f5ed604d9e9dcdbb6760eba5a9eb2851"
+  },
+  "_source": "https://github.com/dankogai/js-base64.git",
+  "_target": "^2.1.9",
+  "_originalSource": "js-base64",
+  "_direct": true
+}

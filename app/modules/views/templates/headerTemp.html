@@ -21,20 +21,23 @@
                         <img alt="profileIcon" src="images/icon/profile.png">
                     </a>
                 </li>-->
-                 <li class="nav_signin">
-                <a href="javascript:void(0)" ng-click="test()" class="nav_signin">{{userInfo}}</a>
+            <!--<li class="nav_signin">
+                <a href="javascript:void(0)" ng-click="test()" class="nav_signin">{{globals.currentUser.email}}</a>
+            </li>-->
+            <li class="nav_signin">
+                <a href="#/createDinner" class="nav_signin" ng-show="globals.currentUser.email">Become a Host</a>
             </li>
             <li class="nav_signin">
-                <a href="#/createDinner" class="nav_signin">Become a Host</a>
+                <a href="#/manageListing" class="nav_signin" ng-show="globals.currentUser.email">Managing List</a>
             </li>
             <li class="nav_signin">
-                <a href="#/manageListing" class="nav_signin">Managing List</a>
+                <a href="#/" class="nav_signin" ng-click="logout()" ng-show="globals.currentUser.email">Log out</a>
             </li>
             <li class="nav_signin">
-                <a href="#/" ng-click="open()" class="nav_signin">Sign In</a>
+                <a id="loginClick" href="#/" ng-click="open()" class="nav_signin" ng-hide="globals.currentUser.email">Sign In</a>
             </li>
             <li>
-                <a href="#/" ng-click="signUp()" class="nav_signup">Sign Up</a>
+                <a href="#/" ng-click="signUp()" class="nav_signup" ng-hide="globals.currentUser.email">Sign Up</a>
             </li>
         </ul>
     </div>

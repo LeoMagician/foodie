@@ -1,61 +1,72 @@
 <div class="manageListNavbar">
     <nav class="navbar navbar-default">
         <ul class="nav navbar-nav">
-            <li class="active"><a href="#/manageReservation">Your Listing</a></li>
-            <li><a href="#">Profile</a></li>
+            <li class="active"><a href="#/manageListing">Your Listing</a></li>
+            <li><a href="#/editProfile">Profile</a></li>
+            <li><a href="#/manageDinner1">Your Dinner</a></li>
+            <li><a href="#/manageOrder">Your Order</a></li>
         </ul>
     </nav>
 </div>
 <div class="manageReservationTemp">
-     <table>
-        <tr>
-            <td>
-                <div class="manageListingOrder">
-                    <p><a href="#/manageListing">&nbsp; Your Listing</a></p>
-                    <p class="active"><a href="#/manageReservation">&nbsp; Your Reservation</a></p>
-                </div>
-                <div class="manageListingAddBtn"><a href="#/createDinner" class="btn btn-success">Add New Listing</a></div>
-            </td>
-            <td>
-                <div class="manageReservationRight">
-                    
-                    <div class="manageReservationTableBody">
-                        <h4>Your upcoming reservations</h4>
-                        <table class="manageReservationTable">
-                           <tr>
-                               <th>Name</th>
-                               <th>Phone</th>
-                               <th>Guest Number</th>
-                               <th>Email</th>
-                           </tr>
-                           <tr>
-                               <td>Joe</td>
-                               <td>123-345-1234</td>
-                               <td>0110000</td>
-                               <td>joe@gmail.com</td>
-                           </tr>
-                           <tr>
-                               <td>Bob</td>
-                               <td>123-345-4848</td>
-                               <td>0110303</td>
-                               <td>bob@gmail.com</td>
-                           </tr>
-                           <tr>
-                               <td>Kate</td>
-                               <td>123-345-2934</td>
-                               <td>0119393</td>
-                               <td>kate@gmail.com</td>
-                           </tr>
-                           <tr>
-                               <td>Ali</td>
-                               <td>123-345-4856</td>
-                               <td>0113830</td>
-                               <td>ali@gmail.com</td>
-                           </tr>
-                        </table>
+    <div class="manageListTable">
+        <table>
+            <tr>
+                <td>
+                    <div class="manageListingOrder">
+                        <p><a href="#/manageListing">&nbsp; Your Listing</a></p>
+                        <p class="active"><a href="#/manageReservation">&nbsp; Your Reservation</a></p>
                     </div>
-                </div>
-            </td>
-        </tr>
-    </table>
+                    <div class="manageListingAddBtn"><a href="#/createDinner" class="btn btn-success">Add New Listing</a></div>
+                </td>
+                <td>
+                    <div class="manageReservationRight">
+                        <!--<div class="ma">-->
+                        <!--<div class="manageReservationShow">
+                            Show the Reservation of Chinese food:
+                            <input type="checkbox" ng-model="myCheck1">
+                        </div>-->
+
+                        <div class="manageReservationTableBody">
+                            <h4>Your upcoming reservations</h4>
+                            <table class="manageReservationTable">
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Phone</th>
+                                    <th>Guest Number</th>
+                                    <th>Email</th>
+
+                                </tr>
+                                <tr>
+                                    <td>Joe</td>
+                                    <td>123-345-1234</td>
+                                    <td>0110000</td>
+                                    <td>joe@gmail.com</td>
+
+                                </tr>
+                                <tr>
+                                    <td>Bob</td>
+                                    <td>123-345-4848</td>
+                                    <td>0110303</td>
+                                    <td>bob@gmail.com</td>
+                                </tr>
+                                <tr>
+                                    <td>Kate</td>
+                                    <td>123-345-2934</td>
+                                    <td>0119393</td>
+                                    <td>kate@gmail.com</td>
+                                </tr>
+                                <tr>
+                                    <td>Ali</td>
+                                    <td>123-345-4856</td>
+                                    <td>0113830</td>
+                                    <td>ali@gmail.com</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
 </div>

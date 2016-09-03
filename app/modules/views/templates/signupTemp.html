@@ -5,46 +5,43 @@
         <h3 class="modal-title">Welcome to foodie family!</h3>
     </div>
     <div class="modal-body">
-    <form>
+
+    <form name="form" id="singupForm">
 
  <div class="input-group">
      <input type="text"  name="firstName" id="firstName" ng-model="firstName" required placeholder="First Name" class="form-control"><span class="input-group-addon"><img class="signupImg" src="images/icon/brand.png"></span><br>
 <div ng-show="form.$submitted||form.firstName.touched">
-    <span ng-show="form.firstName.$error.required">Please Enter Your First Name</span>
+    <p ng-show="form.firstName.$error.required">Please Enter Your First Name</p>
     </div>
       </div>
+  
 
 <div class="input-group">
      <input type="text" name="lastName" id="lastName" ng-model="lastName" required placeholder="Last Name" class="form-control"><span class="input-group-addon"><img class="signupImg" src="images/icon/brand.png"></span><br>
 <div ng-show="form.$submitted||form.lastName.touched">
-    <span ng-show="form.lastName.$error.required">Please Enter Your Last Name</span>
+    <p ng-show="form.lastName.$error.required" class="formLastNm">Please Enter Your Last Name</p>
     </div>
 </div>
+
 
 
 <div class="input-group">
      <input type="email" name="email" id="email" ng-model="email" required placeholder="Email Address" class="form-control"><span class="input-group-addon"><img class="signupImg" src="images/icon/mail.png"></span><br>
-<div ng-show="form.$submitted || form.email.$touched">
-      <span ng-show="form.email.$error.required">Please Enter Your Email</span>
-      <span ng-show="form.email.$error.email">Invalid Email</span>
-    </div>
 </div>
-<!--<input type="email" name="email" id="email" ng-model="email" required placeholder="Email Address"><span><img class="signupImg" src="images/icon/mail.png"></span><br>
 <div ng-show="form.$submitted || form.email.$touched">
-      <span ng-show="form.email.$error.required">Please Enter Your Email</span>
-      <span ng-show="form.email.$error.email">Invalid Email</span>
-    </div>-->
+      <p ng-show="form.email.$error.required">Please Enter Your Email</p>
+      <p ng-show="form.email.$error.email" class="invalidEmailSignUp">Invalid Email</p>
+    </div>
 
 <div class="input-group">
      <input type="password" name="password" id="password" ng-model="password" required placeholder="Password" class="form-control"><span class="input-group-addon"><img class="signupImg" src="images/icon/key.png"></span><br>
 <div ng-show="form.$submitted || form.password.$touched">
-<span ng-show="form.password.$error.required">Please Enter Your Password</span>
+<p ng-show="form.password.$error.required">Please Enter Your Password</p>
 </div>
 </div>
-<!--<input type="password" name="password" id="password" ng-model="password" required placeholder="Password"><span><img class="signupImg" src="images/icon/key.png"></span><br>
-<div ng-show="form.$submitted || form.password.$touched">
-<span ng-show="form.password.$error.required">Please Enter Your Password</span>
-</div>-->
+
+
+
 <p>Birthday</p>
 <select ng-model="month" id="month" require">
     <option value="">Month</option>
@@ -77,7 +74,9 @@
 <a href="#">Privacy Policy</a>, <a href="#">Guest Refund Policy<a>, and <a href="#">Host Guarantee Terms</a>
 </p>
 <input type="submit" value="Sign Up" class="signup"><br>
+</form>
 </div>
+
 <div class="modal-footer">
 <span class="signupmemb">Already a Foodie member?</span><button ng-click="login2()" id="login"> Log In</button>
 </div>
